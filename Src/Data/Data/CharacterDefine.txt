@@ -1,0 +1,59 @@
+{
+  "1": {
+    "TID": 1,
+    "Name": "战士",
+    "Type": "Normal",
+    "Class": "WARRIOR",
+    "Resource": "Character/Warrior",
+    "Description": "战士是勇猛和力量的化身，作为最骁勇善战的他们，拥有最快奔跑速度，掌握近战组合打击能力和一定的远程剑气、旋风攻击能力，并能在战场给予队友护体支援。",
+    "InitLevel": 1,
+    "Speed": 300
+  },
+  "2": {
+    "TID": 2,
+    "Name": "法师",
+    "Type": "Normal",
+    "Class": "WIZARD",
+    "Resource": "Character/Wizard",
+    "Description": "法师是法术和智慧的化身。作为人类联盟的一员，拥有最强大的魔法打击能力和不输于任何人的战场控制能力，并能在战场中快速穿梭。",
+    "InitLevel": 1,
+    "Speed": 300
+  },
+  "3": {
+    "TID": 3,
+    "Name": "弓箭手",
+    "Type": "Normal",
+    "Class": "ARCHER",
+    "Resource": "Character/Archer",
+    "Description": "弓箭手是灵动和迅捷的化身，作为出生于生命之树的精灵族的他们静如松木动如脱兔，拥有最远距离的箭术打击能力和不逊于任何人的体术格斗能力，并能在战场中快速穿梭。外观清新优雅的他们内心也一样平静如水，在战场中始终保持如寒冰一般的冷静，仔细寻找敌人的弱点并进行致命打击",
+    "InitLevel": 1,
+    "Speed": 300
+  },
+  "1001": {
+    "TID": 1001,
+    "Name": "恶鬼",
+    "Type": "Normal",
+    "Class": "WARRIOR",
+    "Resource": "Monster/M1001",
+    "InitLevel": 1,
+    "Speed": 300
+  },
+  "1002": {
+    "TID": 1002,
+    "Name": "-",
+    "Type": "Normal",
+    "Class": "WIZARD",
+    "Resource": "Monster/M1002",
+    "InitLevel": 1,
+    "Speed": 300
+  },
+  "1003": {
+    "TID": 1003,
+    "Name": "-",
+    "Type": "Normal",
+    "Class": "ARCHER",
+    "Resource": "Monster/M1003",
+    "InitLevel": 1,
+    "Speed": 300
+  }
+}
