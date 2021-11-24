@@ -1,0 +1,280 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Common;
+using Network;
+using UnityEngine;
+using Models;
+using SkillBridge.Message;
+
+namespace Services
+{
+    class UserService : Singleton<UserService>, IDisposable
+    {
+
+        public UnityEngine.Events.UnityAction<Result, string> OnLogin;
+        public UnityEngine.Events.UnityAction<Result, string> OnRegister;
+        public UnityEngine.Events.UnityAction<Result, string> OnCharacterCreate;
+        public UnityEngine.Events.UnityAction<Result, string> OnGameEnter;
+        public UnityEngine.Events.UnityAction<Result, string> OnGameLeave;
+        NetMessage pendingMessage = null;
+        bool connected = false;
+
+        public UserService()
+        {
+            NetClient.Instance.OnConnect += OnGameServerConnect;
+            NetClient.Instance.OnDisconnect += OnGameServerDisconnect;
+            MessageDistributer.Instance.Subscribe<UserLoginResponse>(this.OnUserLogin);
+            MessageDistributer.Instance.Subscribe<UserRegisterResponse>(this.OnUserRegister);
+            MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnUserGameEnter);
+            MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
+            //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+        }
+
+
+        public void Dispose()
+        {
+            MessageDistributer.Instance.Unsubscribe<UserLoginResponse>(this.OnUserLogin);
+            MessageDistributer.Instance.Unsubscribe<UserRegisterResponse>(this.OnUserRegister);
+            MessageDistributer.Instance.Unsubscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
+            MessageDistributer.Instance.Unsubscribe<UserGameEnterResponse>(this.OnUserGameEnter);
+            MessageDistributer.Instance.Unsubscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
+            //MessageDistributer.Instance.Unsubscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+            NetClient.Instance.OnConnect -= OnGameServerConnect;
+            NetClient.Instance.OnDisconnect -= OnGameServerDisconnect;
+        }
+
+        public void Init()
+        {
+
+        }
+
+        public void ConnectToServer()
+        {
+            Debug.Log("ConnectToServer() Start ");
+            //NetClient.Instance.CryptKey = this.SessionId;
+            NetClient.Instance.Init("127.0.0.1", 8000);
+
+            NetClient.Instance.Connect();
+        }
+
+
+        void OnGameServerConnect(int result, string reason)
+        {
+            Log.InfoFormat("LoadingMesager::OnGameServerConnect :{0} reason:{1}", result, reason);
+            if (NetClient.Instance.Connected)
+            {
+                this.connected = true;
+                if (this.pendingMessage != null)
+                {
+                    NetClient.Instance.SendMessage(this.pendingMessage);
+                    this.pendingMessage = null;
+                }
+            }
+            else
+            {
+                if (!this.DisconnectNotify(result, reason))
+                {
+                    MessageBox.Show(string.Format("网络错误，无法连接到服务器！\n RESULT:{0} ERROR:{1}", result, reason), "错误", MessageBoxType.Error);
+                }
+            }
+        }
+        public void OnGameServerDisconnect(int result, string reason)
+        {
+            this.DisconnectNotify(result, reason);
+            return;
+        }
+
+        bool DisconnectNotify(int result, string reason)
+        {
+            if (this.pendingMessage != null)
+            {
+                if (this.pendingMessage.Request.userLogin != null)
+                {
+                    if (this.OnLogin != null)
+                    {
+                        this.OnLogin(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
+                else if (this.pendingMessage.Request.userRegister != null)
+                {
+                    if (this.OnRegister != null)
+                    {
+                        this.OnRegister(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
+                else
+                {
+                    if (this.OnCharacterCreate != null)
+                    {
+                        this.OnCharacterCreate(Result.Failed, string.Format("服务器断开！\n RESULT:{0} ERROR:{1}", result, reason));
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
+
+        public void SendLogin(string user, string psw)
+        {
+            Debug.LogFormat("UserLoginRequest::user :{0} psw:{1}", user, psw);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.userLogin = new UserLoginRequest();
+            message.Request.userLogin.User = user;
+            message.Request.userLogin.Passward = psw;
+
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
+        void OnUserLogin(object sender, UserLoginResponse response)
+        {
+            Debug.LogFormat("OnUserLogin:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {//登陆成功逻辑
+                Models.User.Instance.SetupUserInfo(response.Userinfo);
+            };//这个if是直接抄的！以后再看看！！！！！！！！
+            if (this.OnLogin != null)
+            {
+                this.OnLogin(response.Result, response.Errormsg);
+            }
+        }
+
+        public void SendRegister(string user, string psw)
+        {
+            Debug.LogFormat("UserRegisterRequest::user :{0} psw:{1}", user, psw);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.userRegister = new UserRegisterRequest();
+            message.Request.userRegister.User = user;
+            message.Request.userRegister.Passward = psw;
+
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
+        void OnUserRegister(object sender, UserRegisterResponse response)
+        {
+            Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (this.OnRegister != null)
+            {
+                this.OnRegister(response.Result, response.Errormsg);
+            }
+        }
+
+        public void SendCharCreate(string charName, CharacterClass charClass)
+        {
+            Debug.LogFormat("UserCharCreateRequest::charName :{0} charClass:{1}", charName, charClass);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.createChar = new UserCreateCharacterRequest();
+            message.Request.createChar.Name = charName;
+            message.Request.createChar.Class = charClass;
+
+            if (this.connected && NetClient.Instance.Connected)
+            {
+                this.pendingMessage = null;
+                NetClient.Instance.SendMessage(message);
+            }
+            else
+            {
+                this.pendingMessage = message;
+                this.ConnectToServer();
+            }
+        }
+        void OnUserCreateCharacter(object sender, UserCreateCharacterResponse response)
+        {
+            Debug.LogFormat("OnUserCreateCharacter:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {
+                Models.User.Instance.Info.Player.Characters.Clear();
+                Models.User.Instance.Info.Player.Characters.AddRange(response.Characters);
+            }
+
+            if (this.OnCharacterCreate != null)
+            {
+                this.OnCharacterCreate(response.Result, response.Errormsg);
+            }
+        }
+
+        public void SendGameEnter(int characterIdx)
+        {
+            Debug.LogFormat("UserGameEnterRequest::characterIdx : {0}", characterIdx);
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameEnter = new UserGameEnterRequest();
+            message.Request.gameEnter.characterIdx = characterIdx;
+            NetClient.Instance.SendMessage(message);
+
+        }
+
+        void OnUserGameEnter(object sender, UserGameEnterResponse response)
+        {
+            Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
+
+            if (response.Result == Result.Success)
+            {
+                //未完成
+            }
+
+            if (this.OnGameEnter != null)
+            {
+                this.OnGameEnter(response.Result, response.Errormsg);
+            }
+        }
+        public void SendGameLeave()
+        {
+            Debug.LogFormat("UserGameLeaveRequest::" );
+            NetMessage message = new NetMessage();
+            message.Request = new NetMessageRequest();
+            message.Request.gameLeave = new UserGameLeaveRequest();
+            NetClient.Instance.SendMessage(message);
+
+        }
+
+        private void OnUserGameLeave(object sender, UserGameLeaveResponse response)
+        {
+            MapService.Instance.CurrentMapId = 0;
+            Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
+            
+        }
+
+        //看一下以往视频，这里是什么时候被删除的，我漏看了吗?
+        //private void OnMapCharacterEnter(object sender, MapCharacterEnterResponse message)//
+        //{
+        //    Debug.LogFormat("OnMapCharacterEnter: CharacterName:{0} MapID:[{1}]", message.Characters[0].Name, message.mapId);
+        //    NCharacterInfo info = message.Characters[0];
+        //    User.Instance.CurrentCharacter = info;
+        //    //SceneManager.Instance.LoadScene(DataManager.Instance.Maps[message.mapId].Resource);
+        //    // MapService.Instance.CurrentMapId = message.mapId;
+
+        //    //Debug.Log("这是个啥1："+DataManager.Instance.Maps[message.mapId].Resource);
+        //    //Debug.Log("这是个啥2：" + DataManager.Instance.Maps[message.mapId].Name);
+        //}
+
+
+
+
+    }
+}

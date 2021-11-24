@@ -1,0 +1,665 @@
+2021-11-23 16:09:46,003 [ 1] INFO  Unity: LoadingManager start
+2021-11-23 16:09:48,643 [ 1] INFO  Unity: DataManager > DataManager()
+2021-11-23 16:10:03,508 [ 1] INFO  Unity: UserLoginRequest::user :111 psw:111
+2021-11-23 16:10:03,509 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-11-23 16:10:03,515 [ 1] INFO  Unity: DoConnect
+2021-11-23 16:10:03,516 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-11-23 16:10:03,521 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2021-11-23 16:10:03,526 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-11-23 16:10:06,239 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2021-11-23 16:10:06,240 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-11-23 16:10:06,560 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-23 16:10:07,668 [ 1] INFO  Unity: Select Char:[1]撒旦魔女[Archer]
+2021-11-23 16:10:08,347 [ 1] INFO  Unity: UserGameEnterRequest::characterIdx : 0
+2021-11-23 16:10:08,381 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2021-11-23 16:10:08,400 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2021-11-23 16:10:08,402 [ 1] INFO  Unity: AddCharacter:TCID1:撒旦魔女 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-23 16:10:08,405 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-11-23 16:10:08,923 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-23 16:10:09,682 [ 1] INFO  Unity: SetPosition:(5000, 4000, 809)
+2021-11-23 16:10:09,684 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2021-11-23 16:10:13,111 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2021-11-23 16:10:13,112 [ 1] INFO  Unity: AddCharacter:TCID4:222 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-23 16:10:14,158 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:10:14,900 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2021-11-23 16:10:14,901 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,809) DIR:(100,0,0) SPD:0
+2021-11-23 16:10:14,998 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2021-11-23 16:10:14,999 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,809) DIR:(98,18,0) SPD:0
+2021-11-23 16:10:15,082 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
+2021-11-23 16:10:15,083 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,809) DIR:(94,35,0) SPD:0
+2021-11-23 16:10:15,114 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:10:15,115 [ 1] INFO  Unity: move了
+2021-11-23 16:10:15,116 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,809) DIR:(86,51,0) SPD:0
+2021-11-23 16:10:15,181 [ 1] INFO  Unity: SetDirection:(74, 67, 0)
+2021-11-23 16:10:15,181 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4984,3988,809) DIR:(86,51,0) SPD:-300
+2021-11-23 16:10:15,347 [ 1] INFO  Unity: SetDirection:(61, 79, 0)
+2021-11-23 16:10:15,348 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4948,3961,809) DIR:(74,67,0) SPD:-300
+2021-11-23 16:10:15,729 [ 1] INFO  Unity: SetPosition:(4883, 3875, 802)
+2021-11-23 16:10:15,730 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4879,3869,809) DIR:(61,79,0) SPD:-300
+2021-11-23 16:10:16,075 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:16,076 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:16,077 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4820,3791,802) DIR:(61,79,0) SPD:-300
+2021-11-23 16:10:16,078 [ 1] INFO  Unity: SetPosition:(4826, 3801, 802)
+2021-11-23 16:10:16,079 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4820,3791,802) DIR:(61,79,0) SPD:-300
+2021-11-23 16:10:16,407 [ 1] INFO  Unity: SetDirection:(75, 66, 0)
+2021-11-23 16:10:16,409 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4826,3801,802) DIR:(61,79,0) SPD:0
+2021-11-23 16:10:16,507 [ 1] INFO  Unity: SetDirection:(87, 49, 0)
+2021-11-23 16:10:16,508 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4826,3801,802) DIR:(75,66,0) SPD:0
+2021-11-23 16:10:16,591 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:10:16,591 [ 1] INFO  Unity: move了
+2021-11-23 16:10:16,592 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4826,3801,802) DIR:(87,49,0) SPD:0
+2021-11-23 16:10:16,606 [ 1] INFO  Unity: SetDirection:(95, 30, 0)
+2021-11-23 16:10:16,607 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4830,3803,802) DIR:(87,49,0) SPD:300
+2021-11-23 16:10:16,722 [ 1] INFO  Unity: SetDirection:(99, 11, 0)
+2021-11-23 16:10:16,723 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4865,3817,802) DIR:(95,30,0) SPD:300
+2021-11-23 16:10:17,054 [ 1] INFO  Unity: SetPosition:(4967, 3827, 802)
+2021-11-23 16:10:17,055 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4965,3837,802) DIR:(99,11,0) SPD:300
+2021-11-23 16:10:17,435 [ 1] INFO  Unity: SetPosition:(5076, 3839, 802)
+2021-11-23 16:10:17,436 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5077,3849,802) DIR:(99,11,0) SPD:300
+2021-11-23 16:10:17,566 [ 1] INFO  Unity: SetDirection:(96, 29, 0)
+2021-11-23 16:10:17,567 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5116,3847,802) DIR:(99,11,0) SPD:300
+2021-11-23 16:10:17,616 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:17,617 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:17,618 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(96,29,0) SPD:300
+2021-11-23 16:10:17,666 [ 1] INFO  Unity: SetDirection:(88, 48, 0)
+2021-11-23 16:10:17,667 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(96,29,0) SPD:0
+2021-11-23 16:10:17,748 [ 1] INFO  Unity: SetDirection:(78, 63, 0)
+2021-11-23 16:10:17,749 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(88,48,0) SPD:0
+2021-11-23 16:10:17,849 [ 1] INFO  Unity: SetDirection:(63, 77, 0)
+2021-11-23 16:10:17,849 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(78,63,0) SPD:0
+2021-11-23 16:10:17,931 [ 1] INFO  Unity: SetDirection:(49, 87, 0)
+2021-11-23 16:10:17,932 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(63,77,0) SPD:0
+2021-11-23 16:10:18,014 [ 1] INFO  Unity: SetDirection:(33, 94, 0)
+2021-11-23 16:10:18,015 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(49,87,0) SPD:0
+2021-11-23 16:10:18,098 [ 1] INFO  Unity: SetDirection:(16, 99, 0)
+2021-11-23 16:10:18,099 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(33,94,0) SPD:0
+2021-11-23 16:10:18,198 [ 1] INFO  Unity: SetDirection:(-5, 100, 0)
+2021-11-23 16:10:18,199 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(16,99,0) SPD:0
+2021-11-23 16:10:18,313 [ 1] INFO  Unity: SetDirection:(-23, 97, 0)
+2021-11-23 16:10:18,314 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(-5,100,0) SPD:0
+2021-11-23 16:10:19,866 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:10:19,867 [ 1] INFO  Unity: move了
+2021-11-23 16:10:20,596 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4794, 4000, 804) DIR:(100, 0, 0) SPD:-300 
+2021-11-23 16:10:20,630 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4794, 4000, 804) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:10:20,631 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:20,696 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4794, 4000, 804) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:10:20,730 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4794, 4000, 804) DIR:(98, 18, 0) SPD:0 
+2021-11-23 16:10:20,731 [ 1] INFO  Unity: move了
+2021-11-23 16:10:20,765 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4819, 4004, 804) DIR:(98, 18, 0) SPD:300 
+2021-11-23 16:10:20,814 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4824, 4006, 804) DIR:(93, 36, 0) SPD:300 
+2021-11-23 16:10:20,880 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4849, 4016, 804) DIR:(93, 36, 0) SPD:300 
+2021-11-23 16:10:20,965 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4873, 4034, 804) DIR:(73, 68, 0) SPD:300 
+2021-11-23 16:10:21,076 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4893, 4049, 804) DIR:(73, 68, 0) SPD:300 
+2021-11-23 16:10:21,192 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4914, 4077, 804) DIR:(58, 82, 0) SPD:300 
+2021-11-23 16:10:21,562 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4958, 4187, 804) DIR:(42, 91, 0) SPD:300 
+2021-11-23 16:10:21,580 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4962, 4185, 804) DIR:(59, 81, 0) SPD:300 
+2021-11-23 16:10:21,678 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4974, 4201, 804) DIR:(59, 81, 0) SPD:300 
+2021-11-23 16:10:21,727 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4994, 4216, 804) DIR:(74, 67, 0) SPD:300 
+2021-11-23 16:10:21,830 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(85, 53, 0) SPD:300 
+2021-11-23 16:10:21,831 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:21,846 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(94, 34, 0) SPD:0 
+2021-11-23 16:10:21,959 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(94, 34, 0) SPD:0 
+2021-11-23 16:10:22,021 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(99, 14, 0) SPD:0 
+2021-11-23 16:10:22,111 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(100, -3, 0) SPD:0 
+2021-11-23 16:10:22,194 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(98, -21, 0) SPD:0 
+2021-11-23 16:10:22,311 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(91, -41, 0) SPD:0 
+2021-11-23 16:10:22,413 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(67, -74, 0) SPD:0 
+2021-11-23 16:10:22,517 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(67, -74, 0) SPD:0 
+2021-11-23 16:10:22,634 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(52, -85, 0) SPD:0 
+2021-11-23 16:10:22,635 [ 1] INFO  Unity: jump了
+2021-11-23 16:10:22,739 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(52, -85, 0) SPD:0 
+2021-11-23 16:10:24,441 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(36, -93, 0) SPD:0 
+2021-11-23 16:10:24,442 [ 1] INFO  Unity: jump了
+2021-11-23 16:10:25,554 [ 1] INFO  Unity: jump了
+2021-11-23 16:10:25,554 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(-23,97,0) SPD:0
+2021-11-23 16:10:27,075 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5014, 4231, 804) DIR:(36, -93, 0) SPD:0 
+2021-11-23 16:10:27,076 [ 1] INFO  Unity: move了
+2021-11-23 16:10:27,492 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5064, 4106, 804) DIR:(36, -93, 0) SPD:300 
+2021-11-23 16:10:27,493 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:27,510 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(36, -93, 0) SPD:0 
+2021-11-23 16:10:27,549 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(19, -98, 0) SPD:0 
+2021-11-23 16:10:27,628 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(19, -98, 0) SPD:0 
+2021-11-23 16:10:29,623 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:10:29,624 [ 1] INFO  Unity: move了
+2021-11-23 16:10:29,625 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5131,3850,802) DIR:(-23,97,0) SPD:0
+2021-11-23 16:10:29,939 [ 1] INFO  Unity: SetPosition:(5102, 3944, 802)
+2021-11-23 16:10:29,940 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5112,3945,802) DIR:(-23,97,0) SPD:300
+2021-11-23 16:10:30,545 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:30,546 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:30,546 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5066,4124,802) DIR:(-23,97,0) SPD:300
+2021-11-23 16:10:30,548 [ 1] INFO  Unity: SetPosition:(5062, 4114, 802)
+2021-11-23 16:10:30,548 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5066,4124,802) DIR:(-23,97,0) SPD:300
+2021-11-23 16:10:32,161 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:10:32,162 [ 1] INFO  Unity: move了
+2021-11-23 16:10:32,163 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5062,4114,802) DIR:(-23,97,0) SPD:0
+2021-11-23 16:10:32,973 [ 1] INFO  Unity: SetDirection:(-41, 91, 0)
+2021-11-23 16:10:32,974 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5013,4359,802) DIR:(-23,97,0) SPD:300
+2021-11-23 16:10:33,073 [ 1] INFO  Unity: SetPosition:(4992, 4384, 802)
+2021-11-23 16:10:33,074 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5001,4389,802) DIR:(-41,91,0) SPD:300
+2021-11-23 16:10:33,106 [ 1] INFO  Unity: SetDirection:(-57, 82, 0)
+2021-11-23 16:10:33,107 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4988,4394,802) DIR:(-41,91,0) SPD:300
+2021-11-23 16:10:33,205 [ 1] INFO  Unity: SetDirection:(-72, 69, 0)
+2021-11-23 16:10:33,206 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4970,4418,802) DIR:(-57,82,0) SPD:300
+2021-11-23 16:10:33,288 [ 1] INFO  Unity: SetDirection:(-83, 55, 0)
+2021-11-23 16:10:33,289 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4950,4433,802) DIR:(-72,69,0) SPD:300
+2021-11-23 16:10:33,387 [ 1] INFO  Unity: SetDirection:(-93, 37, 0)
+2021-11-23 16:10:33,388 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4926,4451,802) DIR:(-83,55,0) SPD:300
+2021-11-23 16:10:33,454 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:33,455 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:33,456 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-93,37,0) SPD:300
+2021-11-23 16:10:33,470 [ 1] INFO  Unity: SetDirection:(-98, 20, 0)
+2021-11-23 16:10:33,471 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-93,37,0) SPD:0
+2021-11-23 16:10:33,570 [ 1] INFO  Unity: SetDirection:(-100, -1, 0)
+2021-11-23 16:10:33,570 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-98,20,0) SPD:0
+2021-11-23 16:10:33,669 [ 1] INFO  Unity: SetDirection:(-98, -21, 0)
+2021-11-23 16:10:33,670 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-100,-1,0) SPD:0
+2021-11-23 16:10:33,753 [ 1] INFO  Unity: SetDirection:(-92, -38, 0)
+2021-11-23 16:10:33,754 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-98,-21,0) SPD:0
+2021-11-23 16:10:33,869 [ 1] INFO  Unity: SetDirection:(-83, -56, 0)
+2021-11-23 16:10:33,869 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-92,-38,0) SPD:0
+2021-11-23 16:10:33,952 [ 1] INFO  Unity: SetDirection:(-71, -70, 0)
+2021-11-23 16:10:33,952 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-83,-56,0) SPD:0
+2021-11-23 16:10:34,052 [ 1] INFO  Unity: SetDirection:(-55, -83, 0)
+2021-11-23 16:10:34,053 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-71,-70,0) SPD:0
+2021-11-23 16:10:34,151 [ 1] INFO  Unity: SetDirection:(-37, -93, 0)
+2021-11-23 16:10:34,152 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-55,-83,0) SPD:0
+2021-11-23 16:10:34,167 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:10:34,168 [ 1] INFO  Unity: move了
+2021-11-23 16:10:34,169 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-37,-93,0) SPD:0
+2021-11-23 16:10:34,171 [ 1] INFO  Unity: SetPosition:(4916, 4462, 802)
+2021-11-23 16:10:34,171 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4906,4459,802) DIR:(-37,-93,0) SPD:0
+2021-11-23 16:10:34,251 [ 1] INFO  Unity: SetDirection:(-18, -98, 0)
+2021-11-23 16:10:34,252 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4926,4487,802) DIR:(-37,-93,0) SPD:-300
+2021-11-23 16:10:34,383 [ 1] INFO  Unity: SetDirection:(0, -100, 0)
+2021-11-23 16:10:34,385 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4934,4527,802) DIR:(-18,-98,0) SPD:-300
+2021-11-23 16:10:34,533 [ 1] INFO  Unity: SetPosition:(4931, 4562, 802)
+2021-11-23 16:10:34,534 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4934,4572,802) DIR:(0,-100,0) SPD:-300
+2021-11-23 16:10:34,979 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:34,981 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:34,982 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,4692,802) DIR:(0,-100,0) SPD:-300
+2021-11-23 16:10:34,984 [ 1] INFO  Unity: SetPosition:(4931, 4679, 802)
+2021-11-23 16:10:34,985 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,4692,802) DIR:(0,-100,0) SPD:0
+2021-11-23 16:10:35,928 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(1, -100, 0) SPD:0 
+2021-11-23 16:10:36,009 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(20, -98, 0) SPD:0 
+2021-11-23 16:10:36,109 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(37, -93, 0) SPD:0 
+2021-11-23 16:10:36,219 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(55, -83, 0) SPD:0 
+2021-11-23 16:10:36,309 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(69, -72, 0) SPD:0 
+2021-11-23 16:10:36,376 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(91, -41, 0) SPD:0 
+2021-11-23 16:10:36,483 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(91, -41, 0) SPD:0 
+2021-11-23 16:10:36,566 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(98, -22, 0) SPD:0 
+2021-11-23 16:10:36,658 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(100, -4, 0) SPD:0 
+2021-11-23 16:10:36,775 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(99, 17, 0) SPD:0 
+2021-11-23 16:10:36,851 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(93, 37, 0) SPD:0 
+2021-11-23 16:10:36,956 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(83, 55, 0) SPD:0 
+2021-11-23 16:10:37,082 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5054, 4113, 804) DIR:(72, 69, 0) SPD:0 
+2021-11-23 16:10:37,083 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5057, 4117, 804) DIR:(57, 82, 0) SPD:300 
+2021-11-23 16:10:37,084 [ 1] INFO  Unity: move了
+2021-11-23 16:10:37,132 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5066, 4129, 804) DIR:(57, 82, 0) SPD:300 
+2021-11-23 16:10:37,248 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5078, 4159, 804) DIR:(41, 91, 0) SPD:300 
+2021-11-23 16:10:37,371 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5086, 4199, 804) DIR:(22, 98, 0) SPD:300 
+2021-11-23 16:10:37,863 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5086, 4349, 804) DIR:(4, 100, 0) SPD:300 
+2021-11-23 16:10:38,168 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(4, 100, 0) SPD:300 
+2021-11-23 16:10:38,169 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:38,221 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(4, 100, 0) SPD:0 
+2021-11-23 16:10:38,326 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-33, 94, 0) SPD:0 
+2021-11-23 16:10:38,424 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-33, 94, 0) SPD:0 
+2021-11-23 16:10:40,437 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-49, 87, 0) SPD:0 
+2021-11-23 16:10:40,438 [ 1] INFO  Unity: jump了
+2021-11-23 16:10:42,019 [ 1] INFO  Unity: SetDirection:(18, -98, 0)
+2021-11-23 16:10:42,020 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,4679,802) DIR:(0,-100,0) SPD:0
+2021-11-23 16:10:42,152 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:10:42,152 [ 1] INFO  Unity: move了
+2021-11-23 16:10:42,153 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,4679,802) DIR:(18,-98,0) SPD:0
+2021-11-23 16:10:42,167 [ 1] INFO  Unity: SetDirection:(36, -93, 0)
+2021-11-23 16:10:42,168 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4930,4684,802) DIR:(18,-98,0) SPD:-300
+2021-11-23 16:10:42,515 [ 1] INFO  Unity: SetPosition:(4894, 4780, 802)
+2021-11-23 16:10:42,517 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4888,4789,802) DIR:(36,-93,0) SPD:-300
+2021-11-23 16:10:42,663 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:42,664 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:42,665 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4876,4825,802) DIR:(36,-93,0) SPD:-300
+2021-11-23 16:10:42,666 [ 1] INFO  Unity: SetPosition:(4881, 4815, 802)
+2021-11-23 16:10:42,667 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4876,4825,802) DIR:(36,-93,0) SPD:-300
+2021-11-23 16:10:42,680 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:10:42,681 [ 1] INFO  Unity: move了
+2021-11-23 16:10:42,682 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4881,4815,802) DIR:(36,-93,0) SPD:0
+2021-11-23 16:10:43,343 [ 1] INFO  Unity: SetPosition:(4955, 4624, 802)
+2021-11-23 16:10:43,344 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4961,4615,802) DIR:(36,-93,0) SPD:300
+2021-11-23 16:10:43,597 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:43,598 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:43,599 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4985,4549,802) DIR:(36,-93,0) SPD:300
+2021-11-23 16:10:43,601 [ 1] INFO  Unity: SetPosition:(4980, 4559, 802)
+2021-11-23 16:10:43,602 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4985,4549,802) DIR:(36,-93,0) SPD:300
+2021-11-23 16:10:44,948 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:10:44,949 [ 1] INFO  Unity: move了
+2021-11-23 16:10:44,950 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4980,4559,802) DIR:(36,-93,0) SPD:0
+2021-11-23 16:10:45,610 [ 1] INFO  Unity: SetPosition:(5054, 4368, 802)
+2021-11-23 16:10:45,611 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5060,4359,802) DIR:(36,-93,0) SPD:300
+2021-11-23 16:10:45,759 [ 1] INFO  Unity: SetDirection:(19, -98, 0)
+2021-11-23 16:10:45,759 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5070,4328,802) DIR:(36,-93,0) SPD:300
+2021-11-23 16:10:46,112 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:46,113 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:46,113 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5091,4223,802) DIR:(19,-98,0) SPD:300
+2021-11-23 16:10:46,803 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-49, 87, 0) SPD:0 
+2021-11-23 16:10:46,971 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-64, 77, 0) SPD:0 
+2021-11-23 16:10:47,073 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-77, 63, 0) SPD:0 
+2021-11-23 16:10:47,175 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-88, 47, 0) SPD:0 
+2021-11-23 16:10:47,271 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-96, 28, 0) SPD:0 
+2021-11-23 16:10:47,342 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-99, 11, 0) SPD:0 
+2021-11-23 16:10:47,439 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-100, -7, 0) SPD:0 
+2021-11-23 16:10:47,528 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-96, -27, 0) SPD:0 
+2021-11-23 16:10:47,605 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-90, -43, 0) SPD:0 
+2021-11-23 16:10:47,693 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-81, -58, 0) SPD:0 
+2021-11-23 16:10:47,788 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-70, -72, 0) SPD:0 
+2021-11-23 16:10:47,893 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-53, -85, 0) SPD:0 
+2021-11-23 16:10:47,986 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-35, -94, 0) SPD:0 
+2021-11-23 16:10:48,069 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(-18, -98, 0) SPD:0 
+2021-11-23 16:10:48,172 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5096, 4440, 804) DIR:(20, -98, 0) SPD:0 
+2021-11-23 16:10:48,219 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5095, 4445, 804) DIR:(20, -98, 0) SPD:-300 
+2021-11-23 16:10:48,220 [ 1] INFO  Unity: move了
+2021-11-23 16:10:48,309 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5089, 4470, 804) DIR:(38, -92, 0) SPD:-300 
+2021-11-23 16:10:48,475 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5074, 4511, 804) DIR:(38, -92, 0) SPD:-300 
+2021-11-23 16:10:48,719 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5049, 4571, 804) DIR:(38, -92, 0) SPD:-300 
+2021-11-23 16:10:48,921 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5025, 4631, 804) DIR:(38, -92, 0) SPD:-300 
+2021-11-23 16:10:48,922 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:48,937 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5029, 4618, 804) DIR:(38, -92, 0) SPD:0 
+2021-11-23 16:10:49,069 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5029, 4618, 804) DIR:(38, -92, 0) SPD:0 
+2021-11-23 16:10:49,157 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5029, 4618, 804) DIR:(21, -98, 0) SPD:0 
+2021-11-23 16:10:49,334 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5029, 4618, 804) DIR:(1, -100, 0) SPD:0 
+2021-11-23 16:10:49,335 [ 1] INFO  Unity: move了
+2021-11-23 16:10:49,350 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(5027, 4608, 804) DIR:(-18, -98, 0) SPD:300 
+2021-11-23 16:10:50,869 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4946, 4156, 804) DIR:(-18, -98, 0) SPD:300 
+2021-11-23 16:10:51,118 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4931, 4081, 804) DIR:(-18, -98, 0) SPD:300 
+2021-11-23 16:10:51,220 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4931, 4051, 804) DIR:(1, -100, 0) SPD:300 
+2021-11-23 16:10:51,270 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(21, -98, 0) SPD:0 
+2021-11-23 16:10:51,270 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:51,303 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(21, -98, 0) SPD:0 
+2021-11-23 16:10:51,421 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(41, -91, 0) SPD:0 
+2021-11-23 16:10:51,504 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(59, -81, 0) SPD:0 
+2021-11-23 16:10:51,586 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(74, -67, 0) SPD:0 
+2021-11-23 16:10:51,689 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(85, -53, 0) SPD:0 
+2021-11-23 16:10:51,789 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:10:51,886 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:10:51,972 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(100, 4, 0) SPD:0 
+2021-11-23 16:10:52,086 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4933, 4041, 804) DIR:(97, 24, 0) SPD:0 
+2021-11-23 16:10:52,087 [ 1] INFO  Unity: move了
+2021-11-23 16:10:52,119 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4918, 4035, 804) DIR:(90, 43, 0) SPD:-300 
+2021-11-23 16:10:52,238 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4884, 4020, 804) DIR:(81, 59, 0) SPD:-300 
+2021-11-23 16:10:52,479 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4838, 3990, 804) DIR:(81, 59, 0) SPD:-300 
+2021-11-23 16:10:52,853 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4742, 3918, 804) DIR:(81, 59, 0) SPD:-300 
+2021-11-23 16:10:52,854 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:52,915 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(81, 59, 0) SPD:0 
+2021-11-23 16:10:54,388 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(81, 59, 0) SPD:0 
+2021-11-23 16:10:54,504 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(91, 43, 0) SPD:0 
+2021-11-23 16:10:54,597 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(97, 24, 0) SPD:0 
+2021-11-23 16:10:54,685 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(100, 7, 0) SPD:0 
+2021-11-23 16:10:54,802 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(99, -11, 0) SPD:0 
+2021-11-23 16:10:54,852 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(95, -31, 0) SPD:0 
+2021-11-23 16:10:54,967 [ 1] INFO  Unity: OnEntityChanged : ID:2 POS:(4751, 3926, 804) DIR:(88, -47, 0) SPD:0 
+2021-11-23 16:10:56,018 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2021-11-23 16:10:56,018 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5091,4223,802) DIR:(19,-98,0) SPD:0
+2021-11-23 16:10:56,134 [ 1] INFO  Unity: SetDirection:(-19, -98, 0)
+2021-11-23 16:10:56,135 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5091,4223,802) DIR:(1,-100,0) SPD:0
+2021-11-23 16:10:56,216 [ 1] INFO  Unity: SetDirection:(-36, -93, 0)
+2021-11-23 16:10:56,217 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5091,4223,802) DIR:(-19,-98,0) SPD:0
+2021-11-23 16:10:56,250 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:10:56,250 [ 1] INFO  Unity: move了
+2021-11-23 16:10:56,251 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5091,4223,802) DIR:(-36,-93,0) SPD:0
+2021-11-23 16:10:56,333 [ 1] INFO  Unity: SetDirection:(-52, -85, 0)
+2021-11-23 16:10:56,334 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5081,4198,802) DIR:(-36,-93,0) SPD:300
+2021-11-23 16:10:56,948 [ 1] INFO  Unity: SetPosition:(4983, 4051, 802)
+2021-11-23 16:10:56,949 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4973,4054,802) DIR:(-52,-85,0) SPD:300
+2021-11-23 16:10:57,330 [ 1] INFO  Unity: SetPosition:(4923, 3953, 802)
+2021-11-23 16:10:57,331 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4914,3959,802) DIR:(-52,-85,0) SPD:300
+2021-11-23 16:10:57,610 [ 1] INFO  Unity: Stop
+2021-11-23 16:10:57,611 [ 1] INFO  Unity: idle了
+2021-11-23 16:10:57,612 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4872,3885,802) DIR:(-52,-85,0) SPD:300
+2021-11-23 16:11:00,692 [ 1] INFO  Unity: SetDirection:(-67, -74, 0)
+2021-11-23 16:11:00,692 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4872,3885,802) DIR:(-52,-85,0) SPD:0
+2021-11-23 16:11:00,824 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:11:00,825 [ 1] INFO  Unity: move了
+2021-11-23 16:11:00,825 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4872,3885,802) DIR:(-67,-74,0) SPD:0
+2021-11-23 16:11:00,827 [ 1] INFO  Unity: SetPosition:(4884, 3888, 802)
+2021-11-23 16:11:00,828 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4872,3885,802) DIR:(-67,-74,0) SPD:0
+2021-11-23 16:11:01,106 [ 1] INFO  Unity: Stop
+2021-11-23 16:11:01,107 [ 1] INFO  Unity: idle了
+2021-11-23 16:11:01,107 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4932,3952,802) DIR:(-67,-74,0) SPD:-300
+2021-11-23 16:11:01,109 [ 1] INFO  Unity: SetPosition:(4931, 3940, 802)
+2021-11-23 16:11:01,109 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4932,3952,802) DIR:(-67,-74,0) SPD:-300
+2021-11-23 16:11:03,208 [ 1] INFO  Unity: OnMapCharacterLeave:characterEntityId:2
+2021-11-23 16:11:03,210 [ 1] INFO  Unity: RemoveCharacter:TcharacterID:2
+2021-11-23 16:11:03,213 [ 1] INFO  Unity: Character_4_222 OnDestroy: ID:2 POS:(4751, 3926, 804) DIR:(88, -47, 0) SPD:0
+2021-11-23 16:11:08,063 [ 1] INFO  Unity: SetDirection:(-79, -61, 0)
+2021-11-23 16:11:08,064 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,3940,802) DIR:(-67,-74,0) SPD:0
+2021-11-23 16:11:08,196 [ 1] INFO  Unity: SetDirection:(-89, -45, 0)
+2021-11-23 16:11:08,197 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,3940,802) DIR:(-79,-61,0) SPD:0
+2021-11-23 16:11:08,345 [ 1] INFO  Unity: SetDirection:(-96, -28, 0)
+2021-11-23 16:11:08,346 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,3940,802) DIR:(-89,-45,0) SPD:0
+2021-11-23 16:11:08,478 [ 1] INFO  Unity: SetDirection:(-99, -11, 0)
+2021-11-23 16:11:08,478 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,3940,802) DIR:(-96,-28,0) SPD:0
+2021-11-23 16:11:08,594 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:11:08,594 [ 1] INFO  Unity: move了
+2021-11-23 16:11:08,595 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,3940,802) DIR:(-99,-11,0) SPD:0
+2021-11-23 16:11:08,595 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
+2021-11-23 16:11:08,596 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4931,3940,802) DIR:(-99,-11,0) SPD:0
+2021-11-23 16:11:09,058 [ 1] INFO  Unity: SetPosition:(5067, 3930, 802)
+2021-11-23 16:11:09,059 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5071,3940,802) DIR:(-100,8,0) SPD:-300
+2021-11-23 16:11:09,253 [ 1] INFO  Unity: Stop
+2021-11-23 16:11:09,253 [ 1] INFO  Unity: idle了
+2021-11-23 16:11:09,254 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,3930,802) DIR:(-100,8,0) SPD:-300
+2021-11-23 16:11:11,103 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2021-11-23 16:11:11,105 [ 1] INFO  Unity: AddCharacter:TCID4:222 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-23 16:11:11,886 [ 1] INFO  Unity: OnEntityChanged : ID:3 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:11:19,315 [ 1] INFO  Unity: SetDirection:(-97, 26, 0)
+2021-11-23 16:11:19,316 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,3930,802) DIR:(-100,8,0) SPD:0
+2021-11-23 16:11:19,464 [ 1] INFO  Unity: SetDirection:(-90, 44, 0)
+2021-11-23 16:11:19,465 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,3930,802) DIR:(-97,26,0) SPD:0
+2021-11-23 16:11:19,564 [ 1] INFO  Unity: SetDirection:(-80, 60, 0)
+2021-11-23 16:11:19,564 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,3930,802) DIR:(-90,44,0) SPD:0
+2021-11-23 16:11:19,647 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:11:19,647 [ 1] INFO  Unity: move了
+2021-11-23 16:11:19,648 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,3930,802) DIR:(-80,60,0) SPD:0
+2021-11-23 16:11:19,648 [ 1] INFO  Unity: SetDirection:(-68, 73, 0)
+2021-11-23 16:11:19,649 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,3930,802) DIR:(-80,60,0) SPD:0
+2021-11-23 16:11:19,746 [ 1] INFO  Unity: SetDirection:(-53, 84, 0)
+2021-11-23 16:11:19,747 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5135,3906,802) DIR:(-68,73,0) SPD:-300
+2021-11-23 16:11:19,945 [ 1] INFO  Unity: SetDirection:(-38, 93, 0)
+2021-11-23 16:11:19,946 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5171,3858,802) DIR:(-53,84,0) SPD:-300
+2021-11-23 16:11:19,963 [ 1] INFO  Unity: SetPosition:(5163, 3852, 802)
+2021-11-23 16:11:19,964 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5173,3853,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:20,227 [ 1] INFO  Unity: SetPosition:(5190, 3787, 802)
+2021-11-23 16:11:20,228 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5193,3777,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:20,493 [ 1] INFO  Unity: SetPosition:(5219, 3717, 802)
+2021-11-23 16:11:20,493 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5222,3707,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:20,741 [ 1] INFO  Unity: SetPosition:(5245, 3652, 802)
+2021-11-23 16:11:20,742 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5249,3642,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:21,006 [ 1] INFO  Unity: SetPosition:(5274, 3582, 802)
+2021-11-23 16:11:21,007 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5277,3572,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:21,105 [ 1] INFO  Unity: Stop
+2021-11-23 16:11:21,106 [ 1] INFO  Unity: idle了
+2021-11-23 16:11:21,107 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5286,3552,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:22,229 [ 1] INFO  Unity: OnEntityChanged : ID:3 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:11:22,327 [ 1] INFO  Unity: OnEntityChanged : ID:3 POS:(5000, 4000, 809) DIR:(98, -18, 0) SPD:0 
+2021-11-23 16:11:22,411 [ 1] INFO  Unity: OnEntityChanged : ID:3 POS:(5000, 4000, 809) DIR:(84, -55, 0) SPD:0 
+2021-11-23 16:11:22,523 [ 1] INFO  Unity: OnEntityChanged : ID:3 POS:(5000, 4000, 809) DIR:(84, -55, 0) SPD:0 
+2021-11-23 16:11:22,643 [ 1] INFO  Unity: OnEntityChanged : ID:3 POS:(5000, 4000, 809) DIR:(71, -71, 0) SPD:0 
+2021-11-23 16:11:23,693 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:11:23,694 [ 1] INFO  Unity: move了
+2021-11-23 16:11:23,695 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5286,3552,802) DIR:(-38,93,0) SPD:0
+2021-11-23 16:11:23,696 [ 1] INFO  Unity: SetPosition:(5281, 3565, 802)
+2021-11-23 16:11:23,697 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5286,3552,802) DIR:(-38,93,0) SPD:0
+2021-11-23 16:11:23,875 [ 1] INFO  Unity: Stop
+2021-11-23 16:11:23,876 [ 1] INFO  Unity: idle了
+2021-11-23 16:11:23,877 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5259,3620,802) DIR:(-38,93,0) SPD:300
+2021-11-23 16:11:26,075 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:11:26,076 [ 1] INFO  Unity: move了
+2021-11-23 16:11:26,076 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5259,3620,802) DIR:(-38,93,0) SPD:0
+2021-11-23 16:11:26,078 [ 1] INFO  Unity: SetPosition:(5264, 3607, 802)
+2021-11-23 16:11:26,078 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5259,3620,802) DIR:(-38,93,0) SPD:0
+2021-11-23 16:11:26,191 [ 1] INFO  Unity: Stop
+2021-11-23 16:11:26,192 [ 1] INFO  Unity: idle了
+2021-11-23 16:11:26,193 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5278,3572,802) DIR:(-38,93,0) SPD:-300
+2021-11-23 16:11:31,089 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:11:31,089 [ 1] INFO  Unity: move了
+2021-11-23 16:11:31,090 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5278,3572,802) DIR:(-38,93,0) SPD:0
+2021-11-23 16:11:31,091 [ 1] INFO  Unity: SetPosition:(5272, 3586, 802)
+2021-11-23 16:11:31,092 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5278,3572,802) DIR:(-38,93,0) SPD:0
+2021-11-23 16:11:31,554 [ 1] INFO  Unity: SetPosition:(5219, 3716, 802)
+2021-11-23 16:11:31,555 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5216,3726,802) DIR:(-38,93,0) SPD:300
+2021-11-23 16:11:31,868 [ 1] INFO  Unity: Stop
+2021-11-23 16:11:31,868 [ 1] INFO  Unity: idle了
+2021-11-23 16:11:31,869 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5183,3806,802) DIR:(-38,93,0) SPD:300
+2021-11-23 16:11:31,870 [ 1] INFO  Unity: SetPosition:(5187, 3795, 802)
+2021-11-23 16:11:31,871 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5183,3806,802) DIR:(-38,93,0) SPD:300
+2021-11-23 16:11:36,961 [ 1] INFO  Unity: OnMapCharacterLeave:characterEntityId:3
+2021-11-23 16:11:36,962 [ 1] INFO  Unity: RemoveCharacter:TcharacterID:3
+2021-11-23 16:11:36,963 [ 1] INFO  Unity: Character_4_222 OnDestroy: ID:3 POS:(5000, 4000, 809) DIR:(71, -71, 0) SPD:0
+2021-11-23 16:11:38,553 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2021-11-23 16:11:38,554 [ 1] INFO  Unity: AddCharacter:TCID3:雪见 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-23 16:11:39,291 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:11:42,274 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:11:42,356 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(98, -18, 0) SPD:0 
+2021-11-23 16:11:42,456 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(93, -36, 0) SPD:0 
+2021-11-23 16:11:42,587 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(84, -54, 0) SPD:0 
+2021-11-23 16:11:43,205 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(72, -69, 0) SPD:0 
+2021-11-23 16:11:43,206 [ 1] INFO  Unity: jump了
+2021-11-23 16:11:43,239 [ 1] INFO  Unity: OnEntityChanged : ID:4 POS:(5000, 4000, 809) DIR:(72, -69, 0) SPD:0 
+2021-11-23 16:11:43,240 [ 1] INFO  Unity: jump了
+2021-11-23 16:11:49,034 [ 1] INFO  Unity: OnMapCharacterLeave:characterEntityId:4
+2021-11-23 16:11:49,035 [ 1] INFO  Unity: RemoveCharacter:TcharacterID:4
+2021-11-23 16:11:49,036 [ 1] INFO  Unity: Character_3_雪见 OnDestroy: ID:4 POS:(5000, 4000, 809) DIR:(72, -69, 0) SPD:0
+2021-11-23 16:11:50,679 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2021-11-23 16:11:50,680 [ 1] INFO  Unity: AddCharacter:TCID4:222 Map:1 Entity:(5:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-23 16:11:51,423 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:11:55,631 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-11-23 16:11:55,632 [ 1] INFO  Unity: UserGameLeaveRequest::
+2021-11-23 16:11:55,664 [ 1] INFO  Unity: OnMapCharacterLeave:characterEntityId:1
+2021-11-23 16:11:55,666 [ 1] INFO  Unity: RemoveCharacter:TcharacterID:1
+2021-11-23 16:11:55,668 [ 1] INFO  Unity: RemoveCharacter:TcharacterID:5
+2021-11-23 16:11:55,671 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2021-11-23 16:11:55,672 [ 1] INFO  Unity: Character_1_撒旦魔女 OnDestroy: ID:1 POS:(5187, 3795, 802) DIR:(-38, 93, 0) SPD:0
+2021-11-23 16:11:55,672 [ 1] INFO  Unity: Character_4_222 OnDestroy: ID:5 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0
+2021-11-23 16:11:55,842 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-23 16:11:56,549 [ 1] INFO  Unity: Select Char:[2]无敌士兵[Warrior]
+2021-11-23 16:11:57,147 [ 1] INFO  Unity: UserGameEnterRequest::characterIdx : 1
+2021-11-23 16:11:57,179 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2021-11-23 16:11:57,180 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:2
+2021-11-23 16:11:57,181 [ 1] INFO  Unity: AddCharacter:TCID2:无敌士兵 Map:1 Entity:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-11-23 16:11:57,188 [ 1] INFO  Unity: AddCharacter:TCID4:222 Map:1 Entity:(5:pos:(5000,4000,809),dir:(100,0,0),spd:0
+2021-11-23 16:11:57,201 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-11-23 16:11:57,739 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-11-23 16:11:58,247 [ 1] INFO  Unity: SetPosition:(5000, 4000, 809)
+2021-11-23 16:11:58,248 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2021-11-23 16:11:59,917 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0 
+2021-11-23 16:12:00,014 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5000, 4000, 809) DIR:(98, 19, 0) SPD:0 
+2021-11-23 16:12:00,111 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5000, 4000, 809) DIR:(93, 37, 0) SPD:0 
+2021-11-23 16:12:00,239 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5000, 4000, 809) DIR:(84, 55, 0) SPD:0 
+2021-11-23 16:12:00,315 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5000, 4000, 809) DIR:(72, 69, 0) SPD:0 
+2021-11-23 16:12:00,316 [ 1] INFO  Unity: move了
+2021-11-23 16:12:00,580 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4936, 3952, 809) DIR:(72, 69, 0) SPD:-300 
+2021-11-23 16:12:00,882 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4879, 3897, 804) DIR:(72, 69, 0) SPD:-300 
+2021-11-23 16:12:01,164 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4831, 3839, 804) DIR:(72, 69, 0) SPD:-300 
+2021-11-23 16:12:01,214 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4819, 3830, 804) DIR:(72, 69, 0) SPD:-300 
+2021-11-23 16:12:01,215 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:02,744 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2021-11-23 16:12:02,745 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(100,0,0) SPD:0
+2021-11-23 16:12:02,843 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2021-11-23 16:12:02,844 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(98,-18,0) SPD:0
+2021-11-23 16:12:02,926 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2021-11-23 16:12:02,926 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(94,-35,0) SPD:0
+2021-11-23 16:12:03,025 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
+2021-11-23 16:12:03,026 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(86,-51,0) SPD:0
+2021-11-23 16:12:03,128 [ 1] INFO  Unity: SetDirection:(59, -81, 0)
+2021-11-23 16:12:03,129 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(74,-68,0) SPD:0
+2021-11-23 16:12:03,261 [ 1] INFO  Unity: SetDirection:(44, -90, 0)
+2021-11-23 16:12:03,262 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(59,-81,0) SPD:0
+2021-11-23 16:12:03,417 [ 1] INFO  Unity: SetDirection:(26, -97, 0)
+2021-11-23 16:12:03,418 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(44,-90,0) SPD:0
+2021-11-23 16:12:03,515 [ 1] INFO  Unity: SetDirection:(6, -100, 0)
+2021-11-23 16:12:03,516 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(26,-97,0) SPD:0
+2021-11-23 16:12:03,615 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
+2021-11-23 16:12:03,616 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(6,-100,0) SPD:0
+2021-11-23 16:12:03,714 [ 1] INFO  Unity: SetDirection:(-35, -94, 0)
+2021-11-23 16:12:03,715 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-15,-99,0) SPD:0
+2021-11-23 16:12:03,813 [ 1] INFO  Unity: SetDirection:(-53, -85, 0)
+2021-11-23 16:12:03,814 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-35,-94,0) SPD:0
+2021-11-23 16:12:03,945 [ 1] INFO  Unity: SetDirection:(-68, -73, 0)
+2021-11-23 16:12:03,946 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-53,-85,0) SPD:0
+2021-11-23 16:12:04,343 [ 1] INFO  Unity: SetDirection:(-81, -59, 0)
+2021-11-23 16:12:04,344 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-68,-73,0) SPD:0
+2021-11-23 16:12:04,476 [ 1] INFO  Unity: SetDirection:(-90, -44, 0)
+2021-11-23 16:12:04,477 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-81,-59,0) SPD:0
+2021-11-23 16:12:04,560 [ 1] INFO  Unity: SetDirection:(-96, -28, 0)
+2021-11-23 16:12:04,560 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-90,-44,0) SPD:0
+2021-11-23 16:12:04,675 [ 1] INFO  Unity: SetDirection:(-100, -10, 0)
+2021-11-23 16:12:04,676 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-96,-28,0) SPD:0
+2021-11-23 16:12:05,069 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
+2021-11-23 16:12:05,071 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-100,-10,0) SPD:0
+2021-11-23 16:12:06,499 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4819, 3830, 804) DIR:(72, 69, 0) SPD:0 
+2021-11-23 16:12:06,500 [ 1] INFO  Unity: move了
+2021-11-23 16:12:06,519 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4836, 3841, 804) DIR:(72, 69, 0) SPD:300 
+2021-11-23 16:12:06,785 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4896, 3886, 804) DIR:(72, 69, 0) SPD:0 
+2021-11-23 16:12:06,786 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:06,833 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4886, 3891, 804) DIR:(72, 69, 0) SPD:0 
+2021-11-23 16:12:08,217 [ 1] INFO  Unity: MoveBack
+2021-11-23 16:12:08,218 [ 1] INFO  Unity: move了
+2021-11-23 16:12:08,219 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5000,4000,809) DIR:(-100,8,0) SPD:0
+2021-11-23 16:12:08,516 [ 1] INFO  Unity: SetPosition:(5084, 3993, 801)
+2021-11-23 16:12:08,517 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5085,4000,809) DIR:(-100,8,0) SPD:-300
+2021-11-23 16:12:08,698 [ 1] INFO  Unity: Stop
+2021-11-23 16:12:08,699 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:08,699 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5139,3993,801) DIR:(-100,8,0) SPD:-300
+2021-11-23 16:12:10,834 [ 1] INFO  Unity: MoveForward
+2021-11-23 16:12:10,835 [ 1] INFO  Unity: move了
+2021-11-23 16:12:10,836 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5139,3993,801) DIR:(-100,8,0) SPD:0
+2021-11-23 16:12:10,837 [ 1] INFO  Unity: SetPosition:(5126, 3990, 801)
+2021-11-23 16:12:10,837 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5139,3993,801) DIR:(-100,8,0) SPD:0
+2021-11-23 16:12:10,984 [ 1] INFO  Unity: Stop
+2021-11-23 16:12:10,984 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:10,985 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5081,3990,801) DIR:(-100,8,0) SPD:300
+2021-11-23 16:12:13,032 [ 1] INFO  Unity: SetDirection:(-100, -10, 0)
+2021-11-23 16:12:13,033 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5081,3990,801) DIR:(-100,8,0) SPD:0
+2021-11-23 16:12:16,580 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:16,581 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:6 POS:(5081,3990,801) DIR:(-100,-10,0) SPD:0
+2021-11-23 16:12:18,048 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4886, 3891, 804) DIR:(72, 69, 0) SPD:0 
+2021-11-23 16:12:18,190 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4886, 3891, 804) DIR:(59, 81, 0) SPD:0 
+2021-11-23 16:12:18,251 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4886, 3891, 804) DIR:(43, 90, 0) SPD:0 
+2021-11-23 16:12:18,361 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4886, 3891, 804) DIR:(7, 100, 0) SPD:0 
+2021-11-23 16:12:18,488 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4886, 3891, 804) DIR:(7, 100, 0) SPD:0 
+2021-11-23 16:12:18,490 [ 1] INFO  Unity: move了
+2021-11-23 16:12:18,515 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4887, 3881, 804) DIR:(-11, 99, 0) SPD:-300 
+2021-11-23 16:12:18,837 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4896, 3788, 804) DIR:(-11, 99, 0) SPD:-300 
+2021-11-23 16:12:19,119 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4905, 3710, 804) DIR:(-11, 99, 0) SPD:-300 
+2021-11-23 16:12:19,429 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4914, 3626, 804) DIR:(-11, 99, 0) SPD:-300 
+2021-11-23 16:12:19,663 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4929, 3551, 804) DIR:(-11, 99, 0) SPD:-300 
+2021-11-23 16:12:19,664 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:19,712 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4921, 3562, 804) DIR:(7, 100, 0) SPD:0 
+2021-11-23 16:12:19,733 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4921, 3562, 804) DIR:(7, 100, 0) SPD:0 
+2021-11-23 16:12:19,782 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4921, 3562, 804) DIR:(7, 100, 0) SPD:0 
+2021-11-23 16:12:19,860 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4921, 3562, 804) DIR:(27, 96, 0) SPD:0 
+2021-11-23 16:12:22,290 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4921, 3562, 804) DIR:(44, 90, 0) SPD:0 
+2021-11-23 16:12:22,292 [ 1] INFO  Unity: move了
+2021-11-23 16:12:22,695 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4978, 3679, 804) DIR:(44, 90, 0) SPD:300 
+2021-11-23 16:12:23,060 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5024, 3774, 804) DIR:(44, 90, 0) SPD:300 
+2021-11-23 16:12:23,385 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5064, 3874, 804) DIR:(44, 90, 0) SPD:300 
+2021-11-23 16:12:23,743 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5113, 3954, 804) DIR:(44, 90, 0) SPD:300 
+2021-11-23 16:12:24,077 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5159, 4049, 804) DIR:(44, 90, 0) SPD:300 
+2021-11-23 16:12:24,104 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5162, 4059, 804) DIR:(26, 96, 0) SPD:300 
+2021-11-23 16:12:24,192 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5167, 4084, 804) DIR:(26, 96, 0) SPD:300 
+2021-11-23 16:12:24,194 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:24,234 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5167, 4084, 804) DIR:(6, 100, 0) SPD:0 
+2021-11-23 16:12:24,268 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5167, 4084, 804) DIR:(6, 100, 0) SPD:0 
+2021-11-23 16:12:24,377 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5167, 4084, 804) DIR:(-12, 99, 0) SPD:0 
+2021-11-23 16:12:24,444 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5167, 4084, 804) DIR:(-32, 95, 0) SPD:0 
+2021-11-23 16:12:24,445 [ 1] INFO  Unity: move了
+2021-11-23 16:12:24,460 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5173, 4063, 804) DIR:(-32, 95, 0) SPD:-300 
+2021-11-23 16:12:24,477 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5177, 4055, 804) DIR:(-48, 88, 0) SPD:-300 
+2021-11-23 16:12:24,543 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5183, 4043, 804) DIR:(-48, 88, 0) SPD:-300 
+2021-11-23 16:12:24,681 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5201, 4019, 804) DIR:(-63, 78, 0) SPD:-300 
+2021-11-23 16:12:24,718 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5221, 4004, 804) DIR:(-77, 63, 0) SPD:-300 
+2021-11-23 16:12:24,804 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5241, 3994, 804) DIR:(-87, 49, 0) SPD:-300 
+2021-11-23 16:12:24,883 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5266, 3984, 804) DIR:(-94, 33, 0) SPD:-300 
+2021-11-23 16:12:24,998 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5296, 3978, 804) DIR:(-99, 16, 0) SPD:-300 
+2021-11-23 16:12:25,100 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5326, 3978, 804) DIR:(-100, -5, 0) SPD:-300 
+2021-11-23 16:12:25,118 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5327, 3986, 804) DIR:(-97, -25, 0) SPD:-300 
+2021-11-23 16:12:25,184 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5342, 3989, 804) DIR:(-97, -25, 0) SPD:-300 
+2021-11-23 16:12:25,265 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5372, 4001, 804) DIR:(-91, -42, 0) SPD:-300 
+2021-11-23 16:12:25,315 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5380, 4007, 804) DIR:(-80, -60, 0) SPD:-300 
+2021-11-23 16:12:25,316 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:25,331 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(-80, -60, 0) SPD:0 
+2021-11-23 16:12:25,367 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(-80, -60, 0) SPD:0 
+2021-11-23 16:12:25,469 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(-66, -75, 0) SPD:0 
+2021-11-23 16:12:25,542 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(-52, -85, 0) SPD:0 
+2021-11-23 16:12:25,644 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(-36, -93, 0) SPD:0 
+2021-11-23 16:12:25,730 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(-16, -99, 0) SPD:0 
+2021-11-23 16:12:25,847 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(5, -100, 0) SPD:0 
+2021-11-23 16:12:25,941 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(25, -97, 0) SPD:0 
+2021-11-23 16:12:26,060 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5369, 4005, 804) DIR:(42, -91, 0) SPD:0 
+2021-11-23 16:12:26,111 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5363, 4013, 804) DIR:(60, -80, 0) SPD:-300 
+2021-11-23 16:12:26,112 [ 1] INFO  Unity: move了
+2021-11-23 16:12:26,174 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5355, 4019, 804) DIR:(75, -66, 0) SPD:-300 
+2021-11-23 16:12:26,206 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5343, 4028, 804) DIR:(75, -66, 0) SPD:-300 
+2021-11-23 16:12:26,295 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5323, 4043, 804) DIR:(85, -52, 0) SPD:-300 
+2021-11-23 16:12:26,392 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5293, 4055, 804) DIR:(93, -36, 0) SPD:-300 
+2021-11-23 16:12:26,592 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5238, 4066, 804) DIR:(98, -19, 0) SPD:-300 
+2021-11-23 16:12:26,659 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5233, 4064, 804) DIR:(100, -2, 0) SPD:-300 
+2021-11-23 16:12:27,096 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5098, 4064, 804) DIR:(100, -2, 0) SPD:-300 
+2021-11-23 16:12:27,207 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5083, 4071, 804) DIR:(98, -19, 0) SPD:-300 
+2021-11-23 16:12:27,233 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5058, 4080, 804) DIR:(93, -37, 0) SPD:-300 
+2021-11-23 16:12:27,265 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5053, 4082, 804) DIR:(93, -37, 0) SPD:-300 
+2021-11-23 16:12:27,363 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5029, 4100, 804) DIR:(85, -53, 0) SPD:-300 
+2021-11-23 16:12:27,464 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(5005, 4118, 804) DIR:(72, -69, 0) SPD:-300 
+2021-11-23 16:12:27,579 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4994, 4141, 804) DIR:(58, -81, 0) SPD:-300 
+2021-11-23 16:12:27,694 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4976, 4165, 804) DIR:(58, -81, 0) SPD:-300 
+2021-11-23 16:12:27,887 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4954, 4215, 804) DIR:(43, -90, 0) SPD:-300 
+2021-11-23 16:12:27,993 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4940, 4250, 804) DIR:(43, -90, 0) SPD:-300 
+2021-11-23 16:12:28,128 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4930, 4280, 804) DIR:(26, -96, 0) SPD:-300 
+2021-11-23 16:12:28,295 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4920, 4330, 804) DIR:(26, -96, 0) SPD:-300 
+2021-11-23 16:12:28,296 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:28,360 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4916, 4350, 804) DIR:(26, -96, 0) SPD:-300 
+2021-11-23 16:12:28,361 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:28,399 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4914, 4338, 804) DIR:(26, -96, 0) SPD:0 
+2021-11-23 16:12:28,979 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4914, 4338, 804) DIR:(26, -96, 0) SPD:0 
+2021-11-23 16:12:28,980 [ 1] INFO  Unity: move了
+2021-11-23 16:12:29,459 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4953, 4194, 804) DIR:(26, -96, 0) SPD:300 
+2021-11-23 16:12:29,697 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4968, 4119, 804) DIR:(26, -96, 0) SPD:300 
+2021-11-23 16:12:29,697 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:29,729 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4969, 4114, 804) DIR:(26, -96, 0) SPD:0 
+2021-11-23 16:12:29,730 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:30,561 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4969, 4114, 804) DIR:(26, -96, 0) SPD:0 
+2021-11-23 16:12:30,694 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4969, 4114, 804) DIR:(9, -100, 0) SPD:0 
+2021-11-23 16:12:30,944 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4969, 4114, 804) DIR:(-10, -100, 0) SPD:0 
+2021-11-23 16:12:30,945 [ 1] INFO  Unity: move了
+2021-11-23 16:12:31,175 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4965, 4047, 804) DIR:(-10, -100, 0) SPD:300 
+2021-11-23 16:12:31,414 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(-10, -100, 0) SPD:300 
+2021-11-23 16:12:31,416 [ 1] INFO  Unity: idle了
+2021-11-23 16:12:31,982 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(-10, -100, 0) SPD:0 
+2021-11-23 16:12:32,095 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(10, -100, 0) SPD:0 
+2021-11-23 16:12:32,197 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(29, -96, 0) SPD:0 
+2021-11-23 16:12:32,293 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(48, -88, 0) SPD:0 
+2021-11-23 16:12:32,692 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(64, -77, 0) SPD:0 
+2021-11-23 16:12:32,693 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:33,439 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(77, -64, 0) SPD:0 
+2021-11-23 16:12:33,570 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(77, -64, 0) SPD:0 
+2021-11-23 16:12:33,670 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(88, -48, 0) SPD:0 
+2021-11-23 16:12:33,824 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(95, -31, 0) SPD:0 
+2021-11-23 16:12:33,941 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:33,942 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:34,661 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:34,661 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:35,207 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:35,208 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:35,671 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:35,672 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:35,887 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:35,888 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:36,371 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:36,372 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:36,588 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:36,590 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:36,815 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:36,815 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:37,054 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:37,055 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:37,252 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:37,253 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:37,435 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:37,437 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:37,720 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:37,721 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:37,965 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:37,966 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:38,190 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:38,191 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:38,246 [ 1] INFO  Unity: OnEntityChanged : ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0 
+2021-11-23 16:12:38,247 [ 1] INFO  Unity: jump了
+2021-11-23 16:12:41,292 [ 1] INFO  Unity: OnMapCharacterLeave:characterEntityId:5
+2021-11-23 16:12:41,293 [ 1] INFO  Unity: RemoveCharacter:TcharacterID:5
+2021-11-23 16:12:41,293 [ 1] INFO  Unity: Character_4_222 OnDestroy: ID:5 POS:(4950, 3972, 804) DIR:(99, -14, 0) SPD:0
+2021-11-23 16:12:44,022 [ 1] INFO  Unity: Character_2_无敌士兵 OnDestroy: ID:6 POS:(5081, 3990, 801) DIR:(-100, -10, 0) SPD:0
+2021-11-23 16:12:44,023 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-11-23 16:12:44,024 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+
