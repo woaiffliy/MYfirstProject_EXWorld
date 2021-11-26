@@ -45,6 +45,10 @@ namespace GameServer.Managers
         
         public void RemoveCharacter(int characterId)
         {
+            if (Characters[characterId] == null)
+            {
+                return;//这句防止回到角色界面之后断开连接，导致报错
+            }
             var cha = this.Characters[characterId];
             EntityManager.Instance.RemoveEntity(cha.Data.MapID, cha);//已解决！答:互通！Character就是Entity的子类！————entity格式和character格式是可以互通的吗？为什么cha在这里不会报错？
             this.Characters.Remove(characterId); 

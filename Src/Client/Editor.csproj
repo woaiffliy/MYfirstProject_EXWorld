@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\findmissing.cs" />
      <Compile Include="Assets\Editor\findmissing2.cs" />
+     <Compile Include="Assets\Editor\MapTools.cs" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>E:/UNITY2018/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

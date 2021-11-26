@@ -85,7 +85,7 @@ public class UICharacterSelect : MonoBehaviour {
         }
     }
 
-    public void OnClickPlay()
+    public void OnClickPlay()//BUG:这里还存在一个多次点击会进入重复角色的问题，需要修改
     {
         if (selectCharacterIdx >= 0)
         {

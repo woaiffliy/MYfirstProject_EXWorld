@@ -36,8 +36,8 @@ public class DataManager : Singleton<DataManager>
         json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
         this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
 
-        json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
-        this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>> (json);
+        //json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
+        //this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>> (json);
     }
 
 
@@ -63,6 +63,8 @@ public class DataManager : Singleton<DataManager>
 
       //  yield return null;
     }
+
+
 
 #if UNITY_EDITOR
     public void SaveTeleporters()

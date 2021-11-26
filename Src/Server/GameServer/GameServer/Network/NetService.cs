@@ -68,6 +68,8 @@ namespace Network
         static void Disconnected(NetConnection<NetSession> sender, SocketAsyncEventArgs e)
         {
             //Performance.ServerConnect = Interlocked.Decrement(ref Performance.ServerConnect);
+            sender.Session.DisConnected();//网络断开连接时服务器执行函数，将玩家角色数据退出
+
             Log.WarningFormat("Client[{0}] Disconnected", e.RemoteEndPoint);
         }
 

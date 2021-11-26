@@ -166,14 +166,13 @@ namespace GameServer.Services
             sender.Session.Character = character;
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
+
         private void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("UserGameLeaveRequest: TcharacterID:{0} Name:{1} Map:{2} entityID:{3} character.id:{4}" ,character.Info.Id, character.Info.Name, character.Info.mapId,character.entityId,character.Id);
-            CharacterManager.Instance.RemoveCharacter(character.entityId);//此处修改为entityid 11.19——————character.info.ID和character.data.ID,还有数据库里的TCharacter.id是一样的，character.id和character.Entityid是一样的（character.id是啥？）
-            MapManager.Instance[character.Info.mapId].CharacterLeave(character.Info);
-           
-            
+            Log.InfoFormat("UserGameLeaveRequest: TcharacterID:{0} Name:{1} Map:{2} entityID:{3} character.id:{4}", character.Info.Id, character.Info.Name, character.Info.mapId, character.entityId, character.Id);
+            CharacterLeave(character);
+
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.gameLeave = new UserGameLeaveResponse();
@@ -182,11 +181,15 @@ namespace GameServer.Services
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
-            
-            
+
+
         }
 
-
+        public void CharacterLeave(Character character)
+        {
+            CharacterManager.Instance.RemoveCharacter(character.entityId);//此处修改为entityid 11.19——————character.info.ID和character.data.ID,还有数据库里的TCharacter.id是一样的，character.id和character.Entityid是一样的（character.id是啥？）
+            MapManager.Instance[character.Info.mapId].CharacterLeave(character);
+        }
     }
 
 }

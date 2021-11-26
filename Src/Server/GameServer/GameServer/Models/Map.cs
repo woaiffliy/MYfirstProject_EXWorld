@@ -91,23 +91,23 @@ namespace GameServer.Models
             conn.SendData(data, 0, data.Length);
         }
 
-        internal void CharacterLeave(NCharacterInfo cha)
+        internal void CharacterLeave(Character cha)//传参由原NCharacterInfo格式改为Character格式——11.24
         {
-            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1},entityID:{2} 比较一下后两者", this.Define.ID, cha.Id, cha.Entity.Id);
+            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1},entityID:{2} 比较一下后两者", this.Define.ID, cha.Id, cha.entityId);
             //this.MapCharacters.Remove(cha.Id);//改了顺序 11.18//这里角色离开用的是character的id，注意！
             foreach (var kv in MapCharacters)
             {
                 this.SendCharacterLeaveMap(kv.Value.connection, cha);
             }
-            this.MapCharacters.Remove(cha.Entity.Id);//是对的，老师也改了——改了顺序 11.18
+            this.MapCharacters.Remove(cha.entityId);//是对的，老师也改了——改了顺序 11.18
         }
 
-        void SendCharacterLeaveMap(NetConnection<NetSession> conn, NCharacterInfo cha)
+        void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character cha)//传参由原NCharacterInfo格式改为Character格式——11.24
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
-            message.Response.mapCharacterLeave.characterId = cha.Entity.Id;//这里发的是EntityID
+            message.Response.mapCharacterLeave.characterId = cha.entityId;//这里发的是EntityID
 
 
             byte[] data = PackageHandler.PackMessage(message);

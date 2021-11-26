@@ -8,7 +8,7 @@ public class EntityController : MonoBehaviour,IEntityNotify
 
     public Animator anim;
     public Rigidbody rb;
-    private AnimatorStateInfo currentBaseState;
+   // private AnimatorStateInfo currentBaseState;
 
     public Entity entity;
 
@@ -17,6 +17,7 @@ public class EntityController : MonoBehaviour,IEntityNotify
     public Vector3 lastPosition;
     Quaternion rotation;
     Quaternion lastRotation;
+
     public float speed;
     public float animSpeed = 1.5f;
     public float jumpPower = 3.0f;
@@ -54,6 +55,7 @@ public class EntityController : MonoBehaviour,IEntityNotify
         this.transform.forward = this.direction;
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
+
     }
 
     void OnDestroy()
@@ -89,19 +91,19 @@ public class EntityController : MonoBehaviour,IEntityNotify
             case EntityEvent.Idle:
                 anim.SetBool("Move", false);
                 anim.SetTrigger("Idle");
-                Debug.LogFormat("idle了");
+                //Debug.LogFormat("idle了");
                 break;
             case EntityEvent.MoveFwd:
                 anim.SetBool("Move", true);
-                Debug.LogFormat("move了");
+                //Debug.LogFormat("move了");
                 break;
             case EntityEvent.MoveBack:
                 anim.SetBool("Move", true);
-                Debug.LogFormat("move了");
+                //Debug.LogFormat("move了");
                 break;
             case EntityEvent.Jump:
                 anim.SetTrigger("Jump");
-                Debug.LogFormat("jump了");
+                //Debug.LogFormat("jump了");
                 break;
         }
     }

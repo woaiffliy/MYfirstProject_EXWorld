@@ -9,6 +9,16 @@ namespace  Managers
 {
     class MinimapManager : Singleton<MinimapManager>
     {
+
+        private Collider minimapBoundingBox;
+        public Collider MinimapBoundingBox
+        {
+            get { return minimapBoundingBox; }
+        }
+
+        public UIMinimap minimap;
+
+
         public Transform PlayerTransform
         { 
             get
@@ -26,5 +36,13 @@ namespace  Managers
             return Resloader.Load<Sprite>("UI/Minimap/" + User.Instance.CurrentMap.MiniMap);
         }
 
+        public void UpdateMinimap(Collider minimapBoundingBox)
+        {
+            this.minimapBoundingBox = minimapBoundingBox;
+            if (minimap != null)
+            {
+                this.minimap.UpdateMap();
+            }
+        }
     }
 }

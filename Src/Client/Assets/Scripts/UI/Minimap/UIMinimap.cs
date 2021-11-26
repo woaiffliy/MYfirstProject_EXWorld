@@ -7,7 +7,7 @@ using Managers;
 public class UIMinimap : MonoBehaviour//MonoSingleton<UIMinimap>//发生了改动：因为此脚本的start函数比GameobjectManager脚本的创建角色gameobject函数执行的早，所以这里改为单例，将InitMap方法公用，并在GameobjectManager脚本末尾执行该单例
 {
 
-    public Collider MinimapBox;
+    public Collider minimapBoundingBox;
     public Image arrow;
     public Image minimap;
     public Text mapName;
@@ -19,21 +19,23 @@ public class UIMinimap : MonoBehaviour//MonoSingleton<UIMinimap>//发生了改�
     // Use this for initialization
     void Start()
     {
-        this.InitMap();
+        MinimapManager.Instance.minimap = this;
+        this.UpdateMap();
     }
 
-    public void InitMap()
+    public void UpdateMap()
     {
         this.mapName.text = User.Instance.CurrentMap.Name;
-        if (this.minimap.overrideSprite == null)
-        {
-            this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
-        }
+
+        this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
+
 
         this.minimap.SetNativeSize();
         this.minimap.transform.localPosition = Vector3.zero;
+        this.minimapBoundingBox = MinimapManager.Instance.MinimapBoundingBox;
+        
+        this.playerTransform = null;
 
-            
 
 
 
@@ -55,13 +57,13 @@ public class UIMinimap : MonoBehaviour//MonoSingleton<UIMinimap>//发生了改�
         
 
 
-        if (this.MinimapBox == null || playerTransform == null) return;//防止切换地图时 组件删除的先后顺序导致报空异常
+        if (this.minimapBoundingBox == null || playerTransform == null) return;//防止切换地图时 组件删除的先后顺序导致报空异常
 
-        float realWidth = this.MinimapBox.bounds.size.x;
-        float realHeight = this.MinimapBox.bounds.size.z;
+        float realWidth = this.minimapBoundingBox.bounds.size.x;
+        float realHeight = this.minimapBoundingBox.bounds.size.z;
 
-        float relaX = this.playerTransform.position.x - this.MinimapBox.bounds.min.x;
-        float relaY = this.playerTransform.position.z - this.MinimapBox.bounds.min.z;
+        float relaX = this.playerTransform.position.x - this.minimapBoundingBox.bounds.min.x;
+        float relaY = this.playerTransform.position.z - this.minimapBoundingBox.bounds.min.z;
 
         float pivotX = relaX / realWidth;//中心点这个不是很理解，再看看（第十三课1小时8分）
         float pivotY = relaY / realHeight;

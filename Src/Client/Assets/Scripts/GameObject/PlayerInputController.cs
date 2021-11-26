@@ -24,7 +24,7 @@ public class PlayerInputController : MonoBehaviour
 
 
     Vector3 lastPos;
-    float lastSync = 0;
+    //float lastSync = 0;
 
 
 
