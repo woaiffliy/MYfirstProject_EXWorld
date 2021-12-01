@@ -17,7 +17,7 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, CharacterDefine> Characters = null;
     public Dictionary<int, TeleporterDefine> Teleporters = null;
     public Dictionary<int, Dictionary<int, SpawnPointDefine>> SpawnPoints = null;
-
+    public Dictionary<int, NpcDefine> NPCs = null;
 
     public DataManager()
     {
@@ -36,33 +36,37 @@ public class DataManager : Singleton<DataManager>
         json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
         this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
 
+        json = File.ReadAllText(this.DataPath + "NpcDefine.txt");
+        this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NpcDefine>>(json);
         //json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
         //this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>> (json);
     }
 
 
-    public void LoadData()
-    {
-        string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
-        this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
+    //public void LoadData()
+    //{
+    //    string json = File.ReadAllText(this.DataPath + "MapDefine.txt");
+    //    this.Maps = JsonConvert.DeserializeObject<Dictionary<int, MapDefine>>(json);
 
-       // yield return null;
+    //   // yield return null;
 
-        json = File.ReadAllText(this.DataPath + "CharacterDefine.txt");
-        this.Characters = JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json);
+    //    json = File.ReadAllText(this.DataPath + "CharacterDefine.txt");
+    //    this.Characters = JsonConvert.DeserializeObject<Dictionary<int, CharacterDefine>>(json);
 
-       // yield return null;
+    //   // yield return null;
 
-         json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
-         this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
+    //     json = File.ReadAllText(this.DataPath + "TeleporterDefine.txt");
+    //     this.Teleporters = JsonConvert.DeserializeObject<Dictionary<int, TeleporterDefine>>(json);
 
-      //  yield return null;
+    //    //  yield return null;
 
-         //json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
-         //this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);//这句话不注释掉，无法执行loadingmanager后续语句，之后解决。
+    //    json = File.ReadAllText(this.DataPath + "NpcDefine.txt");
+    //    this.NPCs = JsonConvert.DeserializeObject<Dictionary<int, NpcDefine>>(json);
+    //    //json = File.ReadAllText(this.DataPath + "SpawnPointDefine.txt");
+    //    //this.SpawnPoints = JsonConvert.DeserializeObject<Dictionary<int, Dictionary<int, SpawnPointDefine>>>(json);//这句话不注释掉，无法执行loadingmanager后续语句，之后解决。
 
-      //  yield return null;
-    }
+    //    //  yield return null;
+    //}
 
 
 

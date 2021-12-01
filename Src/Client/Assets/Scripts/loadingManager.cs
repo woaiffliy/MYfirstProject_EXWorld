@@ -7,7 +7,7 @@ using System.IO;
 using SkillBridge.Message;
 using ProtoBuf;
 using Services;
-
+using Managers;
 
 public class loadingManager : MonoBehaviour {
 
@@ -41,9 +41,10 @@ public class loadingManager : MonoBehaviour {
 		UITips.SetActive(false);
 
 		yield return new WaitForSeconds(0.5f);// yield return
-		DataManager.Instance.LoadData();//载入数据
+		DataManager.Instance.Load();//载入数据
         UserService.Instance.Init();
 		MapService.Instance.Init();
+		NpcFunctionTestManager.Instance.Init();
 		for (float i = 50; i < 100; )
         {
 			i += Random.Range(0.1f, 1.5f);

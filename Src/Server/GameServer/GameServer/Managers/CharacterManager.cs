@@ -45,7 +45,7 @@ namespace GameServer.Managers
         
         public void RemoveCharacter(int characterId)
         {
-            if (Characters[characterId] == null)
+            if (Characters.ContainsKey(characterId) == false)
             {
                 return;//这句防止回到角色界面之后断开连接，导致报错
             }
