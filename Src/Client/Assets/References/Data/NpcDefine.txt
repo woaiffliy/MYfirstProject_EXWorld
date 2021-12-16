@@ -1,0 +1,31 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "南梦牙",
+    "Description": "任务NPC",
+    "Type": "Task"
+  },
+  "2": {
+    "ID": 2,
+    "Name": "宝多六花",
+    "Description": "副本NPC",
+    "Type": "Functional",
+    "Function": "InvokeInstance"
+  },
+  "3": {
+    "ID": 3,
+    "Name": "大熊",
+    "Description": "杂货商人",
+    "Type": "Functional",
+    "Function": "InvokeShop",
+    "Param": 1
+  },
+  "4": {
+    "ID": 4,
+    "Name": "铁匠老王",
+    "Description": "装备NPC",
+    "Type": "Functional",
+    "Function": "InvokeShop",
+    "Param": 2
+  }
+}
