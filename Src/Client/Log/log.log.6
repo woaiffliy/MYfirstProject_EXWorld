@@ -1,46 +1,105 @@
-2021-11-29 16:58:18,861 [ 1] INFO  Unity: LoadingManager start
-2021-11-29 16:58:21,728 [ 1] INFO  Unity: DataManager > DataManager()
-2021-11-29 16:58:25,806 [ 1] INFO  Unity: UserLoginRequest::user :111 psw:111
-2021-11-29 16:58:25,808 [ 1] INFO  Unity: ConnectToServer() Start 
-2021-11-29 16:58:26,086 [ 1] INFO  Unity: DoConnect
-2021-11-29 16:58:26,089 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2021-11-29 16:58:26,094 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2021-12-14 17:14:13,667 [ 1] INFO  Unity: LoadingManager start
+2021-12-14 17:14:16,425 [ 1] INFO  Unity: DataManager > DataManager()
+2021-12-14 17:14:20,519 [ 1] INFO  Unity: UserLoginRequest::user :111 psw:111
+2021-12-14 17:14:20,521 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-12-14 17:14:20,526 [ 1] INFO  Unity: DoConnect
+2021-12-14 17:14:20,528 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-12-14 17:14:20,533 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2021-11-29 16:58:26,101 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2021-11-29 16:58:28,943 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2021-11-29 16:58:28,945 [ 1] INFO  Unity: LoadLevel: CharSelect
-2021-11-29 16:58:30,108 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-29 16:58:31,090 [ 1] INFO  Unity: Select Char:[2]ÎÞµÐÊ¿±ø[Warrior]
-2021-11-29 16:58:31,650 [ 1] INFO  Unity: UserGameEnterRequest::characterIdx : 1
-2021-11-29 16:58:31,687 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2021-11-29 16:58:31,688 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
-2021-11-29 16:58:31,691 [ 1] INFO  Unity: AddCharacter:TCID2:ÎÞµÐÊ¿±ø Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2021-11-29 16:58:31,694 [ 1] INFO  Unity: LoadLevel: MainCity
-2021-11-29 16:58:33,723 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+2021-12-14 17:14:20,538 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2021-12-14 17:14:23,274 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2021-12-14 17:14:23,276 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-12-14 17:14:23,603 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-12-14 17:14:24,412 [ 1] INFO  Unity: Select Char:[1]ÉÕ¾Æ[Archer]
+2021-12-14 17:14:25,324 [ 1] INFO  Unity: UserGameEnterRequest::characterIdx : 0
+2021-12-14 17:14:25,463 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2021-12-14 17:14:25,466 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:141]
+2021-12-14 17:14:25,467 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:111]
+2021-12-14 17:14:25,468 [ 1] INFO  Unity: ItemManager:Init[Id:3,Count:62]
+2021-12-14 17:14:25,468 [ 1] INFO  Unity: ItemManager:Init[Id:4,Count:60]
+2021-12-14 17:14:25,469 [ 1] INFO  Unity: ItemManager:Init[Id:5,Count:2]
+2021-12-14 17:14:25,470 [ 1] INFO  Unity: ItemManager:Init[Id:6,Count:2]
+2021-12-14 17:14:25,471 [ 1] INFO  Unity: ItemManager:Init[Id:7,Count:100]
+2021-12-14 17:14:25,471 [ 1] INFO  Unity: ItemManager:Init[Id:8,Count:100]
+2021-12-14 17:14:25,472 [ 1] INFO  Unity: ItemManager:Init[Id:9,Count:2]
+2021-12-14 17:14:25,473 [ 1] INFO  Unity: ItemManager:Init[Id:10,Count:92]
+2021-12-14 17:14:25,474 [ 1] INFO  Unity: ItemManager:Init[Id:11,Count:64]
+2021-12-14 17:14:25,475 [ 1] INFO  Unity: ItemManager:Init[Id:12,Count:2]
+2021-12-14 17:14:25,477 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2021-12-14 17:14:25,479 [ 1] INFO  Unity: AddCharacter: TcharacterID: 1 EntityID: 1 Name: ÉÕ¾Æ Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2021-12-14 17:14:25,483 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-12-14 17:14:26,168 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-2021-11-29 16:58:33,889 [ 1] INFO  Unity: LevelLoadCompleted:1
-2021-11-29 16:58:33,891 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:11)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:17)
-}</args></log4net.Error>
-2021-11-29 16:58:33,895 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:11)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:17)
-}</args></log4net.Error>
-2021-11-29 16:58:33,896 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:11)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:17)
-}</args></log4net.Error>
-2021-11-29 16:58:33,897 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:11)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:17)
-}</args></log4net.Error>
-2021-11-29 16:58:34,864 [ 1] INFO  Unity: SetPosition:(5000, 4000, 809)
-2021-11-29 16:58:34,865 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
-2021-11-29 16:58:47,954 [ 1] INFO  Unity: Character_2_ÎÞµÐÊ¿±ø OnDestroy: ID:1 POS:(5000, 4000, 809) DIR:(100, 0, 0) SPD:0
-2021-11-29 16:58:47,958 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2021-11-29 16:58:47,959 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2021-12-14 17:14:26,299 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-12-14 17:14:26,999 [ 1] INFO  Unity: SetPosition:(5000, 4000, 809)
+2021-12-14 17:14:27,001 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:0
+2021-12-14 17:14:31,687 [ 1] INFO  Unity: MoveForward
+2021-12-14 17:14:31,689 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,809) DIR:(100,0,0) SPD:0
+2021-12-14 17:14:31,978 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2021-12-14 17:14:31,980 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5085,4000,809) DIR:(100,0,0) SPD:300
+2021-12-14 17:14:32,077 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2021-12-14 17:14:32,078 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5115,4006,809) DIR:(98,18,0) SPD:300
+2021-12-14 17:14:32,160 [ 1] INFO  Unity: SetDirection:(85, 52, 0)
+2021-12-14 17:14:32,161 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5140,4016,809) DIR:(93,36,0) SPD:300
+2021-12-14 17:14:32,261 [ 1] INFO  Unity: SetDirection:(73, 69, 0)
+2021-12-14 17:14:32,262 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5164,4034,809) DIR:(85,52,0) SPD:300
+2021-12-14 17:14:32,359 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2021-12-14 17:14:32,360 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5188,4052,809) DIR:(73,69,0) SPD:300
+2021-12-14 17:14:32,442 [ 1] INFO  Unity: SetDirection:(42, 91, 0)
+2021-12-14 17:14:32,443 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5203,4072,809) DIR:(57,82,0) SPD:300
+2021-12-14 17:14:32,524 [ 1] INFO  Unity: SetDirection:(25, 97, 0)
+2021-12-14 17:14:32,525 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5213,4097,809) DIR:(42,91,0) SPD:300
+2021-12-14 17:14:32,614 [ 1] INFO  Unity: SetDirection:(7, 100, 0)
+2021-12-14 17:14:32,615 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5219,4127,809) DIR:(25,97,0) SPD:300
+2021-12-14 17:14:32,714 [ 1] INFO  Unity: SetPosition:(5225, 4153, 802)
+2021-12-14 17:14:32,715 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5219,4157,809) DIR:(7,100,0) SPD:300
+2021-12-14 17:14:32,780 [ 1] INFO  Unity: SetDirection:(-10, 99, 0)
+2021-12-14 17:14:32,781 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5225,4173,802) DIR:(7,100,0) SPD:300
+2021-12-14 17:14:33,112 [ 1] INFO  Unity: SetPosition:(5217, 4268, 802)
+2021-12-14 17:14:33,113 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5206,4268,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:33,444 [ 1] INFO  Unity: SetPosition:(5207, 4367, 802)
+2021-12-14 17:14:33,445 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5197,4368,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:33,776 [ 1] INFO  Unity: SetPosition:(5197, 4466, 802)
+2021-12-14 17:14:33,776 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5187,4467,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:34,107 [ 1] INFO  Unity: SetPosition:(5187, 4565, 802)
+2021-12-14 17:14:34,108 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5177,4566,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:34,439 [ 1] INFO  Unity: SetPosition:(5177, 4664, 802)
+2021-12-14 17:14:34,439 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5167,4665,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:34,769 [ 1] INFO  Unity: SetPosition:(5167, 4763, 802)
+2021-12-14 17:14:34,770 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5157,4764,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:35,140 [ 1] INFO  Unity: SetPosition:(5156, 4873, 802)
+2021-12-14 17:14:35,141 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5145,4873,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:35,172 [ 1] INFO  Unity: SetDirection:(-27, 96, 0)
+2021-12-14 17:14:35,173 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5154,4883,802) DIR:(-10,99,0) SPD:300
+2021-12-14 17:14:35,387 [ 1] INFO  Unity: SetDirection:(-44, 90, 0)
+2021-12-14 17:14:35,389 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5141,4948,802) DIR:(-27,96,0) SPD:300
+2021-12-14 17:14:35,587 [ 1] INFO  Unity: SetPosition:(5111, 4999, 802)
+2021-12-14 17:14:35,588 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5117,5008,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:35,936 [ 1] INFO  Unity: SetPosition:(5066, 5089, 802)
+2021-12-14 17:14:35,937 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5071,5099,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:36,267 [ 1] INFO  Unity: SetPosition:(5022, 5179, 802)
+2021-12-14 17:14:36,268 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5026,5189,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:36,618 [ 1] INFO  Unity: SetPosition:(4976, 5274, 802)
+2021-12-14 17:14:36,618 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4980,5284,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:36,947 [ 1] INFO  Unity: SetPosition:(4932, 5364, 802)
+2021-12-14 17:14:36,948 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4936,5374,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:37,296 [ 1] INFO  Unity: SetPosition:(4886, 5459, 802)
+2021-12-14 17:14:37,297 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4890,5469,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:37,328 [ 1] INFO  Unity: Stop
+2021-12-14 17:14:37,329 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(4882,5469,802) DIR:(-44,90,0) SPD:300
+2021-12-14 17:14:41,331 [ 1] INFO  Unity: SendBuyItem
+2021-12-14 17:14:41,639 [ 1] INFO  Unity: StatusNotify:[Item][Add]2:1
+2021-12-14 17:14:41,641 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:200
+2021-12-14 17:15:11,962 [ 1] INFO  Unity: SendBuyItem
+2021-12-14 17:15:11,997 [ 1] INFO  Unity: StatusNotify:[Item][Add]2:1
+2021-12-14 17:15:11,997 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:200
+2021-12-14 17:15:24,946 [ 1] INFO  Unity: SendBuyItem
+2021-12-14 17:15:24,979 [ 1] INFO  Unity: StatusNotify:[Item][Add]11:1
+2021-12-14 17:15:24,980 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:200
+2021-12-14 17:20:05,902 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-12-14 17:20:05,903 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2021-12-14 17:20:05,908 [ 1] INFO  Unity: Character_1_ÉÕ¾Æ OnDestroy: entityID:1 POS:(4882, 5469, 802) DIR:(-44, 90, 0) SPD:0

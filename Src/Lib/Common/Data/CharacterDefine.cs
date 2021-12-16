@@ -16,5 +16,6 @@ namespace Common.Data
 
         //基本属性
         public int Speed { get; set; }
+        public int Power { get; set; }
     }
 }

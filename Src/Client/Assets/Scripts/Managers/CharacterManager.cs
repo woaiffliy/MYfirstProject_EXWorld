@@ -13,7 +13,7 @@ namespace Services
 
     class CharacterManager : Singleton<CharacterManager>, IDisposable
     {
-        public Dictionary<int, Character> Characters = new Dictionary<int, Character>();//这个表改为TcharacterID维护，不能用entityID
+        public Dictionary<int, Character> Characters = new Dictionary<int, Character>();//entityID存的
 
         public UnityAction<Character> OnCharacterEnter;
         public UnityAction<Character> OnCharacterLeave;
@@ -24,7 +24,7 @@ namespace Services
         public void Clear()
         {
             int[] keys = this.Characters.Keys.ToArray();
-            foreach (var key in keys)
+            foreach (var key in keys)//key是entityid
             {
                 this.RemoveCharacter(key);
             }
@@ -33,11 +33,11 @@ namespace Services
 
         }
 
-        public void AddCharacter(NCharacterInfo cha)
+        public void AddCharacter(NCharacterInfo cha)//character.info.Id 确实是TcharacterID
         {
-            Debug.LogFormat("AddCharacter:TCID{0}:{1} Map:{2} Entity:{3}", cha.Id, cha.Name, cha.mapId, cha.Entity.String());
+            Debug.LogFormat("AddCharacter: TcharacterID: {0} EntityID: {1} Name: {2} Map:{3} Entity:{4}", cha.Id,cha.Entity.Id, cha.Name, cha.mapId, cha.Entity.String());
             Character character = new Character(cha);
-            this.Characters[cha.Entity.Id] = character;//给改成entityid。11.23//这里是用TcharacterId来保存————有人进入地图，就加角色到角色列表中 //老师是用entityid，之后有问题再改。
+            this.Characters[cha.Entity.Id] = character;//给改成entityid。11.23
             EntityManager.Instance.AddEntity(character);
             if (OnCharacterEnter != null)
             {
@@ -51,19 +51,19 @@ namespace Services
 
         }
 
-        internal void RemoveCharacter(int characterId)
+        internal void RemoveCharacter(int entityID)
         {
-            Debug.LogFormat("RemoveCharacter:TcharacterID:{0}", characterId);//这里传回来的就是TcharacterID
+            Debug.LogFormat("RemoveCharacter:EntityID:{0}", entityID);//这里传回来的就是entityID
 
 
-            if (this.Characters.ContainsKey(characterId))
+            if (this.Characters.ContainsKey(entityID))
             {
-                EntityManager.Instance.RemoveEntity(this.Characters[characterId].Info.Entity);
+                EntityManager.Instance.RemoveEntity(this.Characters[entityID].Info.Entity);
                 if (OnCharacterLeave!=null)
                 {
-                    OnCharacterLeave(this.Characters[characterId]);//这个事件还需再看
+                    OnCharacterLeave(this.Characters[entityID]);//这个事件还需再看
                 }
-                this.Characters.Remove(characterId);
+                this.Characters.Remove(entityID);
 
             }
 

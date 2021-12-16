@@ -7,6 +7,7 @@ using Network;
 using UnityEngine;
 using Models;
 using SkillBridge.Message;
+using Managers;
 
 namespace Services
 {
@@ -30,7 +31,7 @@ namespace Services
             MessageDistributer.Instance.Subscribe<UserCreateCharacterResponse>(this.OnUserCreateCharacter);
             MessageDistributer.Instance.Subscribe<UserGameEnterResponse>(this.OnUserGameEnter);
             MessageDistributer.Instance.Subscribe<UserGameLeaveResponse>(this.OnUserGameLeave);
-            //MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
+
         }
 
 
@@ -235,7 +236,11 @@ namespace Services
 
             if (response.Result == Result.Success)
             {
-                //未完成
+                if (response.Character!=null)
+                {
+                    ItemManager.Instance.Init(response.Character.Items);//玩家进入游戏成功，把玩家的物品信息从服务端发送至客户端
+                    BagManager.Instance.Init(response.Character.Bag);
+                }
             }
 
             if (this.OnGameEnter != null)

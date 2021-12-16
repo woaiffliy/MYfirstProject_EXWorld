@@ -39,19 +39,19 @@ namespace GameServer.Managers
             Character character = new Character(CharacterType.Player, cha);
             
             EntityManager.Instance.AddEntity(cha.MapID, character);
-            this.Characters[character.entityId] = character;//这里的ID用不用改成EntityID？
+            this.Characters[character.entityId] = character;//已经改为entityid————这里的ID用不用改成EntityID？
             return character;
         }
         
-        public void RemoveCharacter(int characterId)
+        public void RemoveCharacter(int entityId)
         {
-            if (Characters.ContainsKey(characterId) == false)
+            if (Characters.ContainsKey(entityId) == false)
             {
                 return;//这句防止回到角色界面之后断开连接，导致报错
             }
-            var cha = this.Characters[characterId];
+            var cha = this.Characters[entityId];//这个characterId就是用的entityid
             EntityManager.Instance.RemoveEntity(cha.Data.MapID, cha);//已解决！答:互通！Character就是Entity的子类！————entity格式和character格式是可以互通的吗？为什么cha在这里不会报错？
-            this.Characters.Remove(characterId); 
+            this.Characters.Remove(entityId); 
         }
 
 

@@ -46,6 +46,13 @@ enum ENTITY_EVENT
 	JUMP = 4;
 }
 
+enum ITEM_TYPE
+{
+	NORMAL = 0;
+	TASK = 1; //任务道具
+	METARIAL = 2; //材料
+	EQUIPMENT = 3; //装备
+}
 message NUserInfo {
 	int32 id = 1;
 	NPlayerInfo player = 2;
@@ -65,14 +72,62 @@ message NCharacterInfo {
 	int32 level = 6;
 	int32 mapId = 7;
 	NEntity entity = 8;
+
+	int64 Gold = 9;
+	repeated NItemInfo Items = 10;
+	NBagInfo Bag = 11;
+	
 }
 
+message NItemInfo{
+	int32 id = 1;
+	int32 count = 2;
+}
 message NVector3
 {
 	int32 x = 1;
 	int32 y = 2;
 	int32 z = 3;
 }
+
+message NBagInfo{
+	int32 Unlocked = 1;
+	bytes Items = 2;
+}
+
+enum STATUS_ACTION{
+	UPDATE = 0;
+	ADD = 1;
+	DELETE = 2;
+
+}
+
+enum STATUS_TYPE{
+	MONEY = 0;
+	EXP = 1;
+	SKILL_POINT = 2;
+	ITEM = 3;
+}
+
+enum STATUS_SOURCE{//尚未开发
+	UPDATE = 0;
+	ADD = 1;
+	DELETE = 2;
+}
+
+message NStatus{
+	STATUS_TYPE type = 1;
+	STATUS_ACTION action = 2;
+	int32 id = 3;
+	int32 value = 4;
+}
+
+message StatusNotify{
+	repeated Nstatus status = 1;//repeated加完之后就是个数组
+}
+
+
+
 
 ////////////////////////////////////////////////////////////////
 //
@@ -119,7 +174,9 @@ message NetMessageRequest{
 
 	MapEntitySyncRequest mapEntitySync = 8;
 	MapTeleportRequest mapTeleport = 9;
-	FirstTestRequest firstRequest = 10;
+
+	ItemBuyRequest ItemBuy = 10;
+
 }
 
 message NetMessageResponse{
@@ -133,14 +190,16 @@ message NetMessageResponse{
 	MapCharacterLeaveResponse mapCharacterLeave = 7;
 
 	MapEntitySyncResponse mapEntitySync = 8;
+
+	ItemBuyResponse ItemBuy = 10;
+
+    StatusNotify statusNotify = 100;
 	
 }
 
 
 // User Protocol
-message FirstTestRequest {
-	string helloworld = 1;
-}
+
 
 
 message UserLoginRequest {
@@ -186,6 +245,7 @@ message UserGameEnterRequest
 message UserGameEnterResponse {
 	RESULT result = 1;
 	string errormsg = 2;
+	NCharacterInfo character = 3;
 }
 
 message UserGameLeaveRequest
@@ -229,4 +289,23 @@ message MapEntitySyncResponse
 message MapTeleportRequest
 {
 	int32 teleporterId = 1;
+}
+
+message BagSaveRequest{
+	NBagInfo BagInfo = 1;
+}
+
+message BagSaveResponse{
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+message ItemBuyRequest{
+	int32 ShopId = 1;
+	int32 ShopItemId = 2;
+}
+
+message ItemBuyResponse{
+	RESULT result = 1;
+	string errormsg = 2;
 }

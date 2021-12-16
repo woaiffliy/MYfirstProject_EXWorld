@@ -11,7 +11,7 @@ using SkillBridge.Message;
 
 namespace Network
 {
-    class NetSession
+    class NetSession:INetSession
     {
         public TUser User { get; set; }
         public Character Character { get; set; }
@@ -24,5 +24,44 @@ namespace Network
                 UserService.Instance.CharacterLeave(this.Character);
             }
         }
+
+
+        //老师重写的STATUS 12.12
+        NetMessage response;
+        
+        public NetMessageResponse Response
+        {
+            get
+            {
+                if (response == null)
+                {
+                    response = new NetMessage();
+                }
+                if (response.Response == null)
+                {
+                    response.Response = new NetMessageResponse();
+                }
+                return response.Response;
+            }
+        }
+
+
+        public byte[] GetResponse()
+        {
+            if (response != null)
+            {
+                if (this.Character != null && this.Character.StatusManager.HasStatus)//这是在判断啥
+                {
+                    this.Character.StatusManager.ApplyResponse(Response);
+                }
+                byte[] data = PackageHandler.PackMessage(response);
+                response = null;
+                return data;
+
+            }
+            return null;
+        }
+        //以上            sender.Session.Response.ItemBuy = new ItemBuyResponse();
+        //sender.Session.Response.ItemBuy.Result = result;
     }
 }

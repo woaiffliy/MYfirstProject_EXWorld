@@ -11,6 +11,9 @@ namespace GameServer.Managers
     {
         Dictionary<int, Map> Maps = new Dictionary<int, Map>();
 
+        
+
+
         public void Init()
         {
             foreach (var mapdefine in DataManager.Instance.Maps.Values)

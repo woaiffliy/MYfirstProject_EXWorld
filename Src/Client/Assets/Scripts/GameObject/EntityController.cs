@@ -62,7 +62,7 @@ public class EntityController : MonoBehaviour,IEntityNotify
     {
         if (entity != null)
         {
-            Debug.LogFormat("{0} OnDestroy: ID:{1} POS:{2} DIR:{3} SPD:{4}", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
+            Debug.LogFormat("{0} OnDestroy: entityID:{1} POS:{2} DIR:{3} SPD:{4}", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
         }
         if (UIWorldElementManager.Instance != null)
         {

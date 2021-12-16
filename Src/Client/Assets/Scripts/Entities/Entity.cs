@@ -7,7 +7,7 @@ using SkillBridge.Message;
 
 namespace Entities
 {
-    public class Entity
+    public class Entity//这个整体结构还需再看，看不是很懂
     {
         public int entityId;
 

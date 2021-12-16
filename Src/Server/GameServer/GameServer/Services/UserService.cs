@@ -34,46 +34,50 @@ namespace GameServer.Services
         {
             Log.InfoFormat("UserLoginRequest: User:{0} Pass:{1}", request.User, request.Passward);
 
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
-            message.Response.userLogin = new UserLoginResponse();
+            //NetMessage message = new NetMessage();
+            //message.Response = new NetMessageResponse();
+            //message.Response.userLogin = new UserLoginResponse();
+            //12.14修改
+            sender.Session.Response.userLogin = new UserLoginResponse();
+            //
 
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();//完全不懂
             if (user == null)
             {
-                message.Response.userLogin.Result = Result.Failed;
-                message.Response.userLogin.Errormsg = "用户名不存在！请重新输入！";
+                sender.Session.Response.userLogin.Result = Result.Failed;
+                sender.Session.Response.userLogin.Errormsg = "用户名不存在！请重新输入！";
             }
             else if (user.Password != request.Passward)
             {
-                message.Response.userLogin.Result = Result.Failed;
-                message.Response.userLogin.Errormsg = "密码错误！请重新输入！";
+                sender.Session.Response.userLogin.Result = Result.Failed;
+                sender.Session.Response.userLogin.Errormsg = "密码错误！请重新输入！";
             }
             else
             {
 			//这个else整体都是抄的，以后要看看！！！！！
                 sender.Session.User = user;
-                message.Response.userLogin.Result = Result.Success;
-                message.Response.userLogin.Errormsg = "None";
+                sender.Session.Response.userLogin.Result = Result.Success;
+                sender.Session.Response.userLogin.Errormsg = "None";
 
 
-                message.Response.userLogin.Userinfo = new NUserInfo();
-                message.Response.userLogin.Userinfo.Id = 1;
-                message.Response.userLogin.Userinfo.Player = new NPlayerInfo();
-                message.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
+                sender.Session.Response.userLogin.Userinfo = new NUserInfo();
+                sender.Session.Response.userLogin.Userinfo.Id = 1;
+                sender.Session.Response.userLogin.Userinfo.Player = new NPlayerInfo();
+                sender.Session.Response.userLogin.Userinfo.Player.Id = user.Player.ID;
                 foreach (var c in user.Player.Characters)
                 {
                     NCharacterInfo info = new NCharacterInfo();
                     info.Id = c.ID;
                     info.Name = c.Name;
                     info.Class = (CharacterClass)c.Class;
-                    message.Response.userLogin.Userinfo.Player.Characters.Add(info);
+                    sender.Session.Response.userLogin.Userinfo.Player.Characters.Add(info);
                 }
 
                 
             }
-            byte[] data = PackageHandler.PackMessage(message);
-            sender.SendData(data, 0, data.Length);
+            //byte[] data = PackageHandler.PackMessage(message);
+            //sender.SendData(data, 0, data.Length);
+            sender.SendResponse();
 
         }
 
@@ -120,7 +124,17 @@ namespace GameServer.Services
                 MapPosX = 5000,
                 MapPosY = 4000,
                 MapPosZ = 820,
+                Gold = 200000
             };
+
+            //追加背包
+            var bag = new TCharacterBag();
+            bag.Owner = character;
+            bag.Items = new byte[0];
+            bag.Unlocked = 30;
+            character.Bag = DBService.Instance.Entities.TCharacterBags.Add(bag);//虽然这里写的是TCharacterBags但是是一对一的，1个character只有一个bag
+
+
 
             character = DBService.Instance.Entities.Characters.Add(character);//为保证是最新版本，要返回 character值更新一下
             sender.Session.User.Player.Characters.Add(character);//内存角色增加（不是很懂）
@@ -160,6 +174,38 @@ namespace GameServer.Services
             message.Response.gameEnter = new UserGameEnterResponse();
             message.Response.gameEnter.Result = Result.Success;
             message.Response.gameEnter.Errormsg = "None";
+
+            //进入成功，发送角色初始信息
+            message.Response.gameEnter.Character = character.Info; //道具系统一课添加该句代码
+
+            //道具系统测试逻辑：
+            //int itemid = 1;
+            //bool hasItem = character.ItemManager.HasItem(itemid);
+            //Log.InfoFormat("HasItem:[{0}:{1}]", itemid, hasItem);
+            //if (hasItem)
+            //{
+            //    //character.ItemManager.RemoveItem(itemid, 1);
+            //}
+            //else
+            //{
+            //    character.ItemManager.AddItem(1, 100);
+            //    character.ItemManager.AddItem(2, 100);
+            //    character.ItemManager.AddItem(3, 60);
+            //    character.ItemManager.AddItem(4, 60);
+            //    character.ItemManager.AddItem(5, 2);
+            //    character.ItemManager.AddItem(6, 2);
+            //    character.ItemManager.AddItem(7, 100);
+            //    character.ItemManager.AddItem(8, 100);
+            //    character.ItemManager.AddItem(9, 2);
+            //    character.ItemManager.AddItem(10, 60);
+            //    character.ItemManager.AddItem(11, 60);
+            //    character.ItemManager.AddItem(12, 2);
+            //}
+            //Models.Item item = character.ItemManager.GetItem(itemid);
+            //Log.InfoFormat("Item:[{0}:{1}],count:{2}", itemid, item,item.ItemCount);
+            //DBService.Instance.Save();
+            ////道具系统测试逻辑结束
+
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);

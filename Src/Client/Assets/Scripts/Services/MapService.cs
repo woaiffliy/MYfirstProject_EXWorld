@@ -82,11 +82,12 @@ namespace Services
             Debug.LogFormat("OnMapCharacterLeave:characterEntityId:{0}", response.characterId);
             if (response.characterId!=User.Instance.CurrentCharacter.Entity.Id)
             {
-                CharacterManager.Instance.RemoveCharacter(response.characterId);
+                CharacterManager.Instance.RemoveCharacter(response.characterId);//这个characterID是entityid
             }
             else
             {
                 CharacterManager.Instance.Clear();
+                //在这里应该再写 "离开地图时保存角色背包信息"的代码
             }
         }
 

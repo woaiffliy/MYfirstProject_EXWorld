@@ -8,6 +8,7 @@ using SkillBridge.Message;
 using ProtoBuf;
 using Services;
 using Managers;
+using Assets.Scripts.Services;
 
 public class loadingManager : MonoBehaviour {
 
@@ -44,6 +45,8 @@ public class loadingManager : MonoBehaviour {
 		DataManager.Instance.Load();//载入数据
         UserService.Instance.Init();
 		MapService.Instance.Init();
+		ShopManager.Instance.Init();
+		StatusService.Instance.Init();
 		NpcFunctionTestManager.Instance.Init();
 		for (float i = 50; i < 100; )
         {

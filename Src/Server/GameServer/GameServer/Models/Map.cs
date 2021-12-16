@@ -93,7 +93,7 @@ namespace GameServer.Models
 
         internal void CharacterLeave(Character cha)//传参由原NCharacterInfo格式改为Character格式——11.24
         {
-            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1},entityID:{2} 比较一下后两者", this.Define.ID, cha.Id, cha.entityId);
+            Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1},entityID:{2} character.id = character.entityID", this.Define.ID, cha.Id, cha.entityId);
             //this.MapCharacters.Remove(cha.Id);//改了顺序 11.18//这里角色离开用的是character的id，注意！
             foreach (var kv in MapCharacters)
             {
